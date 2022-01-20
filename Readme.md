@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Егор Штепа](https://up.htmlacademy.ru/htmlcss/33/user/1992371).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Бервяченок](https://htmlacademy.ru/profile/jackson).
 
 ---
 
