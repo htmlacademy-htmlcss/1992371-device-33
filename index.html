@@ -3,157 +3,172 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
 
 <header class="header-nav">
   <nav class="nav">
-    <img src="#" alt="Логотип в шапке страницы">
+    <img src="images/smallLogo.png" alt="Логотип в шапке страницы" width="145px" height="36px">
 
-    <nav class="header-button">
+    <form>
+      <img src="images/search.png" alt="Поиск" width="16px" height="16px">
     <input type="text" value="Текст поиска">
-    <button type="submit">Найти</button>
-    </nav>
+    <button type="submit" class="button-header">Найти</button>
+    </form>
     
     
-    <ul class="nav user">
-      <li class="nav-item"><a class="nav-link" href="#">Войти</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Сравнить</a></li>
+    <ul class="nav-user">
+      <li class="nav-item"><a class="nav-link" href="#"><img src="images/login.png" alt="login" width="13px" height="12px"> Войти</a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><img src="images/stats.png" alt="Сравнить" height="10px" width="12px"> Сравнить</a></li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="#"><img src="images/basket.png" alt="Корзина" height="16px" width="14px">
           <span>2</span>
           <span>Корзина</span> 
         </a>
       </li> 
     </ul>
     <ul class="nav list">
-      <li class="nav-item"><a class="nav-link" href="#">Каталог товаров</a></li>
-     <li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
-     <li class="nav-item"><a class="nav-link" href="#">Гарантия</a></li>
-     <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li> 
+      <li class="nav-item"><a class="nav-link-down" href="#">Каталог товаров</a></li>
+     <li class="nav-item"><a class="nav-link-down" href="#">Доставка</a></li>
+     <li class="nav-item"><a class="nav-link-down" href="#">Гарантия</a></li>
+     <li class="nav-item"><a class="nav-link-down" href="#">Контакты</a></li> 
     </ul>
     
   </nav>
+  <div class="background-header"></div>
 </header>
+
+
 
 <main>
   <h1>Порхает как бабочка,жалит как пчела!</h1>
 
   <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
-  <img src="" alt="Квадрокоптер">
-  <!--Не стал размечать как слайдер,пока что сделал просто картинкой-->
+  <img src="images/slider-1-kopter.png" alt="Квадрокоптер" width="560px" height="560px">
 
-  <button>Подробнее</button>
+  <a class="slider-1" href="#">Подробнее</a>
 
   <table>
     <tr>
-      <td>800 м</td>
+      <td class="p800m50m">800 м</td>
       <td> Дальность полёта</td>
     </tr>
     <tr>
-      <td>50 м</td>
+      <td class="p800m50m">50 м</td>
       <td>Радиус положения</td>
     </tr>
   </table>
 
 <ul>
- <li> <img src="#" alt="$Очки VR$">Виртуальная реальность</li>
- <li> <img src="#" alt="$Монопод$">Моноподы для селфи</li>
- <li> <img src="#" alt="$Экшн камера$">Экшн-камеры</li>
- <li> <img src="#" alt="$Фитнес браслет$">Фитнес-браслеты</li>
- <li><img src="#" alt="$Умные часы$">Умные часы</li>
- <li> <img src="#" alt="$Квадрокоптер$">Квадракоптеры</li>
+ <li class="catalogIndex"> <img src="images/vr.png" alt="$Очки VR$" width="96,95px" height="54,99px">Виртуальная реальность</li>
+ <li class="catalogIndex"> <img src="images/selfie-small.png" alt="$Монопод$" width="85,87px" height="117px">Моноподы для селфи</li>
+ <li class="catalogIndex"> <img src="images/GoPro.png" alt="$Экшн камера$" width="71,02px" height="87px">Экшн-камеры</li>
+ <li class="catalogIndex"> <img src="images/xiaomiMiBand.png" alt="$Фитнес браслет$" width="64,99px" height="46,86px">Фитнес-браслеты</li>
+ <li class="catalogIndex"><img src="images/aplleWatch.png" alt="$Умные часы$" width="56,01px" height="97,98px">Умные часы</li>
+ <li class="catalogIndex"> <img src="images/copter-small.png" alt="$Квадрокоптер$" width="132,03" height="69,01px">Квадракоптеры</li>
 </ul>
 
-  <ul>
+<section style="background:#F0F0F0;">
+  <ul class="DeliveryCreditGuarantee">
   <li>Доставка</li> 
   <li>Гарантия</li>
   <li>Кредит</li>
 </ul>
+<img src="images/deliver.png" alt="Доставщик" width="136px" height="164px">
 
   <h2>Доставка</h2>
-
- <p>Мы с удовольствием доставим ваш товар прямо
+  
+  <p class=textAfterH3>Мы с удовольствием доставим ваш товар прямо
   к вашему подъезду совершенно бесплатно! Ведь
   мы неплохо заработаем, поднимая его на ваш этаж.</p>
+  </section>
 
-
-  <p>Доставим редкий товар под заказ</p>
+  <section style="background:#F0F0F0">
+  <img src="images/car.png" alt="Грузовик" width="47px" height="31,1px">
+  <p class="rare-product">Доставим редкий товар под заказ</p>
+  </section>
 
   <h2>О нас</h2>
 
-  <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+  <p class="description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
   <!--Стоит ли абзацы разделить тегом br?-->
-  <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+  <p class="description" >Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
  
-  <ul>
+  <ul class="list-description">
     <li>Меловые линии</li>
     <li>СДИК</li>
     <li>ТоксБерри</li>
   </ul>
 
-  <a href="#">ПОДРОБНЕЕ О НАС</a>
+  <a class="a-description" href="#">ПОДРОБНЕЕ О НАС</a>
 
   <aside>
 
   <h2>Контакты</h2>
 
-    <p>Вы можете забрать товар сами, заехав в наш офис. 
+    <p class="description">Вы можете забрать товар сами, заехав в наш офис. 
       Заодно сможете проверить работоспособность покупки. </p>
 
   <h3>Интернет-магазин «Девайс»</h3>
 
-  <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-  <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+  <p class="description">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+  <a style="color:black" href="tel:+78128121212">+7 (812) 812-12-12</a>
 
   <h3>Время работы</h3>
 
-  <ul>
+  <ul class="description">
     <li>пн—пт: с 10:00 до 22:00</li>
     <li>сб—вс: с 10:00 до 19:00</li>
   </ul>
 
-  <a href="#"><b>Напишите нам</b></a>
+  <a class="a-description" href="#"><b>Напишите нам</b></a>
   </aside>
 
+  <section class="grey-background">
   <h2>Подпишитесь на рассылку</h2>
 
-  <p>Еженедельный дайджест с обзорами новинок,
+  <p class="description">Еженедельный дайджест с обзорами новинок,
     длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
 
   <nav class="button-main">
-  <input type="text" value="Ваш e-mail">
-  <button type="submit">Подписаться</button>
+  <input type="text" value="Ваш e-mail" class="e-mail">
+  <button type="submit" class="subscribe">Подписаться</button>
   </nav>
 
-  <span>Это бесплатно</span>
+  <img src="images/check.png" alt="Галочка" width="14px" height="14px" >
+  <span class="its-free">Это бесплатно</span>
   
- 
+ </section>
   </main>
 
-  <footer>
-<img src="#" alt="Логотип в подвале">
+  <footer class="color-footer">
+<img src="images/logo-footer.png" alt="Логотип в подвале" width="144,9px" height="36px">
 
-<p>Санкт-Петербург, набережная
+<p class="addres-footer">Санкт-Петербург, набережная
   реки Карповки, 5, литера П.</p> 
 
-  <ul>
+  <ul class="list-footer">
     <li>Доставка</li>
     <li>Гарантия</li>
-    <li>Контакты></li>
+    <li>Контакты</li>
   </ul>
 
-  <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+  <a style="color:#ffffff"href="tel:+78128121212">+7 (812) 812-12-12</a>
 
   <ul>
- <li><a href="https://www.facebook.com/htmlacademy"><img src="#" alt="Facebook"></a> </li>
- <li><a href="https://www.instagram.com/htmlacademy/"><img src="#" alt="Instagram"></a> </li>
- <li><a href="https://twitter.com/htmlacademy_ru"><img src="" alt="Twitter"></a> </li>
+ <li><a href="https://www.facebook.com/htmlacademy"><img src="images/FacebookDark.svg" alt="Facebook"></a> </li>
+ <li><a href="https://www.instagram.com/htmlacademy/"><img src="images/instDark2.svg" alt="Instagram"></a> </li>
+ <li><a href="https://twitter.com/htmlacademy_ru"><img src="images/twitterDark.svg" alt="Twitter"></a> </li>
   </ul>
 
+  <div class="yellow-line"></div>
  
-  <a href="https://htmlacademy.ru/"> <img src="#" alt="Логотип htmlacademy">.html academy</a>
+  <a href="https://htmlacademy.ru/"> <img src="images/HTMLacademyFooter.png" alt="Логотип htmlacademy"></a>
   </footer>
 
   </body>
