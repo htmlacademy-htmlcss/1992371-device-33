@@ -10,50 +10,59 @@
   </head>
   <body>
 
-<header class="header-nav">
+    <header class="header-nav">
+
+       
+
+      <nav class="nav">
+      <img src="images/logo.svg" alt="Логотип в шапке страницы">  
+      <nav class="first-container">
+      <nav class="header-button">
+      <input type="text" value="Текст поиска">
+      <button type="submit">Найти</button>
+      </nav>
+      
+      <ul class="nav-user">
+        <li><a class="nav-link" href="#"><img src="images/login.svg" alt="login" width="13" height="12"> Войти</a></li>
+      </ul>
+
+      <ul class="stats-market">
+        <li><a class="nav-link" href="#"><img src="images/stats.svg" alt="Сравнить" height="10" width="12"> Сравнить</a></li>
+        <li>
+          <a class="nav-link" href="#"><img src="images/market.svg" alt="Корзина" height="16" width="14">
+            <span>2</span>
+            <span>Корзина</span> 
+          </a>
+        </li> 
+      </ul>
+    </nav>
+
+    <nav class="second-container">
+      <ul class="catalog">
+        <li><a class="nav-link-down" href="#">Каталог товаров</a></li>
+      </ul>
+      <ul class="nav-list">
+       <li><a class="nav-link-down" href="#">Доставка</a></li>
+       <li><a class="nav-link-down" href="#">Гарантия</a></li>
+       <li><a class="nav-link-down" href="#">Контакты</a></li> 
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main class="main-container">
+  <div class="second-container">
   
-    <img src="images/logo.svg" alt="Логотип в шапке страницы" width="145" height="36">
-
-    <nav class="nav">
-    <form>
-    <img src="images/search.svg" alt="Поиск" width="16" height="16">
-    <input type="text" value="Текст поиска">
-    <button type="submit" class="button-header">Найти</button>
-    </form>
-    
-    <ul class="nav-user">
-      <li class="nav-item"><a class="nav-link" href="#"><img src="images/login.svg" alt="login" width="13" height="12"> Войти</a></li>
-      <li class="nav-item"><a class="nav-link" href="#"><img src="images/stats.svg" alt="Сравнить" height="10" width="12"> Сравнить</a></li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><img src="images/market.svg" alt="Корзина" height="16px" width="14px">
-          <span>2</span>
-          <span>Корзина</span> 
-        </a>
-      </li> 
-    </ul>
-    </nav>
-
-    <nav class="nav-catalog">
-    <ul class="nav-list-small">
-      <li class="nav-item"><a class="nav-link-down" href="#">Каталог товаров</a></li>
-     <li class="nav-item"><a class="nav-link-down" href="#">Доставка</a></li>
-     <li class="nav-item"><a class="nav-link-down" href="#">Гарантия</a></li>
-     <li class="nav-item"><a class="nav-link-down" href="#">Контакты</a></li> 
-    </ul>
-    </nav>
-</header>
-
-
-
-<main class="main-container">
-  <h1 class="h1">Порхает как бабочка,жалит как пчела!</h1>
-
-  <p class="description-copter">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-
+  <div class="container-slider">
   <img src="images/slider-1-kopter.png" alt="Квадрокоптер" width="560" height="560">
+  
+  </div>
 
+  <div class="specifications-slider">
+    <h1 class="h1">Порхает как бабочка,жалит как пчела!</h1>
+  <p class="description-copter">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
   <a class="slider-1" href="#">Подробнее</a>
-
   <div class="specifications">
   <ul>
     <li class="value"> 800 м </li>
@@ -65,19 +74,10 @@
     <li class="td"> Радиус положения </li>
   </ul>
   </div>
-  <!--
-  <table>
-    <tr>
-      <td class="value">800 м</td>
-      <td class="td"> Дальность полёта</td>
-    </tr>
-    <tr>
-      <td class="value">50 м</td>
-      <td class="td">Радиус положения</td>
-    </tr>
-  </table>
--->
-<ul>
+  </div>
+  </div>
+  
+<ul class="catalog-index-container">
  <li class="catalog-index"> <img src="images/index-catalog1-images.svg" alt="Очки VR" width="97" height="55">Виртуальная реальность</li>
  <li class="catalog-index"> <img src="images/index-catalog2-images.svg" alt="Монопод" width="86" height="117">Моноподы для селфи</li>
  <li class="catalog-index"> <img src="images/index-catalog3-images.svg" alt="Экшн камера" width="71" height="87">Экшн-камеры</li>
@@ -85,7 +85,7 @@
  <li class="catalog-index"><img src="images/index-catalog5-images.svg" alt="Умные часы" width="56" height="98">Умные часы</li>
  <li class="catalogn-index"> <img src="images/index-catalog6-images.svg" alt="Квадрокоптер" width="132" height="69">Квадракоптеры</li>
 </ul>
-
+  
 <section class="background-delivery">
   <ul class="delivery-credit-guarantee">
   <li>Доставка</li> 

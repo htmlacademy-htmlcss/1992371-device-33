@@ -35,54 +35,47 @@
         font-family: "Rubik", sans-serif;
         font-size: 16px;
         line-height: 24px;
-        margin: 0;
+        margin: 0 auto;
         display: flex;
+        min-height: 100%;
         flex-direction: column;
         color: #444444;
         font-style: normal;
         background-color:#FFFFFF;
     }
 
+    .nav{
+        width: 1040px;
+        margin: 0 auto;
+    }
     .main-container{
         flex-grow:1;
-        width: 1440px;
+        width:1040px;
+        margin: 0 auto;
     }
 
     .first-container{
         display: flex;
-    }
-
-    .second-container{
-        margin: 0 auto;
-        display:flex;
-        justify-content: flex;
-    }
-
-    .header-nav{
-        width: 1040px;
-        color:#000000;
-        margin: 0 auto;
+        align-items: center;
     }
 
     .header-button{
-        margin: 0;
-        padding: 0;
-        display: flex;
         width: 517px;
     }
 
     .nav-user{
-        margin: 0;
-        padding: 0;
-        display: flex;
         width: 230px;
+        display: flex;
+        
     }
 
     .stats-market{
-        margin: 0;
-        padding: 0;
+        width:240px;
         display: flex;
-        width: 240px;
+    }
+
+    .second-container{
+        display: flex;
     }
 
     .catalog{
@@ -90,13 +83,32 @@
     }
 
     .nav-list{
+        display: flex;
         justify-content: flex-end;
-        width: 471px;
+        width: 747px;
     }
 
-    ul.nav.list {
+    .second-container{
+        width: 1111px;
+        margin: 0 auto;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
+    }
+
+    .container-slider{
+        display: flex;
+        width: 560px;
+    }
+
+    .catalog-index-container{
+        width: 1160px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .catalog-index{
+        width: 160px;
     }
 
     .nav-link-down {
@@ -157,6 +169,7 @@
         font-size: 18px;
         line-height: 24px;
         color:#000000;
+        width: 160px;
     }
 
     .delivery-credit-guarantee {
@@ -396,9 +409,5 @@
 
     .a-phone{
         color:#000000;
-    }
-
-    .specifications{
-    display: flex;
     }
 
