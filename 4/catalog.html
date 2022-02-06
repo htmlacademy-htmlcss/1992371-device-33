@@ -7,14 +7,14 @@
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-  <base href="https://htmlacademy-htmlcss.github.io/1992371-device-33/4/">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+      <base href="https://htmlacademy-htmlcss.github.io/1992371-device-33/4/">
 </head>
 <body>
     <header class="header-nav">
         <nav class="nav">
-          <img src="images/smallLogo.png" alt="Логотип в шапке страницы">
+          <img src="images/logoSVG.svg" alt="Логотип в шапке страницы">
       
           <nav class="header-button">
           <input type="text" value="Текст поиска">
@@ -22,11 +22,11 @@
           </nav>
           
           <ul class="nav-user">
-            <li class="nav-item"><a class="nav-link" href="#"><img src="images/login.png" alt="login" width="13px" height="12px"> Войти</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img src="images/loginSVG.svg" alt="login" width="13" height="12"> Войти</a></li>
             <li class="nav-item"><a class="nav-link-opacity">Выйти</a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><img src="images/stats.png" alt="Сравнить" height="10px" width="12px"> Сравнить</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img src="images/statsSVG.svg" alt="Сравнить" height="10" width="12"> Сравнить</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><img src="images/basket.png" alt="Корзина" height="16px" width="14px">
+              <a class="nav-link" href="#"><img src="images/marketSVG.svg" alt="Корзина" height="16px" width="14px">
                 <span>2</span>
                 <span>Корзина</span> 
               </a>
@@ -39,8 +39,13 @@
            <li class="nav-item"><a class="nav-link-down" href="#">Контакты</a></li> 
           </ul>
           
-        </nav>
-        <div class="background-header"></div>
+          <ul class="nav list">
+            <li class="nav-item"><a class="nav-link-down" href="#">Каталог товаров</a></li>
+           <li class="nav-item"><a class="nav-link-down" href="#">Доставка</a></li>
+           <li class="nav-item"><a class="nav-link-down" href="#">Гарантия</a></li>
+           <li class="nav-item"><a class="nav-link-down" href="#">Контакты</a></li> 
+          </ul>
+        </nav> 
       </header>
 
       <main>
@@ -61,30 +66,31 @@
               </fieldset>
 
         <fieldset>
+
         <legend class="left-filter-bold">Цвет</legend>
         <ul>
             <li>
-                <label>
+                <label class="label">
                     <input type="checkbox" name="black" checked>Черный
                 </label>
             </li>
             <li>
-                <label>
+                <label class="label">
                     <input type="checkbox" name="White" checked>Белый
                 </label>
             </li>
             <li>
-                <label>
+                <label class="label">
                     <input type="checkbox" name="Blue" >Синий
                 </label>
             </li>
             <li>
-                <label>
+                <label class="label">
                     <input type="checkbox" name="Red" >Красный
                 </label>
             </li>
             <li>
-                <label>
+                <label class="label">
                     <input type="checkbox" name="Pink">Розовый
                 </label>
             </li>
@@ -95,21 +101,20 @@
         <legend class="left-filter-bold">Bluetooth</legend>
         <ul>
             <li>
-                <label>
-                    <input type="radio" name="haveBluetooth" checked>Есть
+                <label class="label">
+                    <input type="radio" name="have-bluetooth" checked>Есть
                 </label>
             </li>
             <li>
                 <legend>
-                    <label>
-                    <input type="radio" name="haven'tBluetooth">Нет
+                    <label class="label">
+                    <input type="radio" name="haven't-bluetooth">Нет
                     </label>
                 </legend>
             </li>
         </ul>
     </fieldset>
 
-    <div class="yellow-bakground-catalog"></div>
     <a class="link-left-catalog" href="#">Показать</a>
     
 
@@ -124,41 +129,41 @@
 <section class="white-background-catalog">
     <ul>
         <li>
-            <a style="text-decoration: none;" href="#">
+            <a href="#">
                 <img src="images/catalog/catalog-1.png" alt="Любительская селфи-палка">
                 <h3>Любительская селфи-палка</h3>
             </a>
-            <b>500 &#8381</b>
+            <b class="b">500 &#8381</b>
         </li>
         <li>
             <a style="text-decoration: none;" href="#">
                 <img src="images/catalog/catalog-2.png" alt="Профессиональная селфи-палка">
-                <h3>Профессиональная селфи-палка</h3>
+                <h3 class="h3">Профессиональная селфи-палка</h3>
             </a>
-            <b>1500 &#8381 </b>
+            <b class="b">1500 &#8381 </b>
         </li>
         <li>
             <a style="text-decoration: none;" href="#">
                 <img src="images/catalog/catalog-3.png" alt="Непотопляемая селфи-палка">
-                <h3>Непотопляемая селфи-палка</h3>
+                <h3 class="h3">Непотопляемая селфи-палка</h3>
             </a>
-            <b>2500 &#8381</b>
+            <b class="b">2500 &#8381</b>
         </li>
         <li>
             <a style="text-decoration: none;" href="#">
                 <img src="images/catalog/caatalog-4.png" alt="Cелфи-палка &laquoСледуй за мной&#187">
-                <h3>Cелфи-палка &laquoСледуй за мной&#187</h3>
+                <h3 class="h3">Cелфи-палка &laquoСледуй за мной&#187</h3>
             </a>
-            <b>1500 &#8381</b>
+            <b class="b">1500 &#8381</b>
         </li>
     </ul>
-        <button class="showMore" type="button">Загрузить ещё</button>
+        <button class="pagination" type="button">Загрузить ещё</button>
     </section>
 
     <section class="pages1-15">
     <ul>
         <li>
-            <a class="backForward" href="#">
+            <a class="pagination-nav" href="#">
                 <span>Назад</span>
             </a>
         </li>
@@ -184,14 +189,14 @@
             <a href="#">15</a>
         </li>
         <li>
-            <a href="#"><span class="backForward">Вперёд</span></a>
+            <a href="#"><span class="pagination-nav">Вперёд</span></a>
         </li>
        </ul>
     </section>
      </main>
 
-     <footer class="color-footer">
-        <img src="images/logo-footer.png" alt="Логотип в подвале" width="144,9px" height="36px">
+     <footer class="footer">
+        <img src="images/logo-footerSVG.svg" alt="Логотип в подвале" width="144,9" height="36">
         
         <p class="addres-footer">Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</p> 
@@ -202,7 +207,7 @@
             <li>Контакты</li>
           </ul>
         
-          <a style="color:#ffffff"href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         
           <ul>
          <li><a href="https://www.facebook.com/htmlacademy"><img src="images/FacebookDark.svg" alt="Facebook"></a> </li>
