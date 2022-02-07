@@ -5,75 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
-</head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    </head>
 <body>
     <header class="header-nav">
-        <nav class="nav">
-          <img src="#" alt="Логотип в шапке страницы">
-      
+
+       
+
+          <nav class="nav">
+          <img src="images/logo.svg" alt="Логотип в шапке страницы">  
+          <nav class="first-container">
           <nav class="header-button">
           <input type="text" value="Текст поиска">
           <button type="submit">Найти</button>
           </nav>
           
-          
-          <ul class="nav user">
-            <li class="nav-item"><a class="nav-link" href="#">Войти</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Сравнить</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+          <ul class="nav-user">
+            <li><a class="nav-link" href="#"><img src="images/login.svg" alt="login" width="13" height="12"> Войти</a></li>
+            <li><a class="nav-link" href="#">Выйти</a></li>
+          </ul>
+
+          <ul class="stats-market">
+            <li><a class="nav-link" href="#"><img src="images/stats.svg" alt="Сравнить" height="10" width="12"> Сравнить</a></li>
+            <li>
+              <a class="nav-link" href="#"><img src="images/market.svg" alt="Корзина" height="16" width="14">
                 <span>2</span>
                 <span>Корзина</span> 
               </a>
             </li> 
           </ul>
-          <ul class="nav list">
-            <li class="nav-item"><a class="nav-link" href="#">Каталог товаров</a></li>
-           <li class="nav-item"><a class="nav-link" href="#">Доставка</a></li>
-           <li class="nav-item"><a class="nav-link" href="#">Гарантия</a></li>
-           <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li> 
+        </nav>
+
+        <nav class="second-container">
+          <ul class="catalog">
+            <li><a class="nav-link-down" href="#">Каталог товаров</a></li>
           </ul>
-          
+          <ul class="nav-list">
+           <li><a class="nav-link-down" href="#">Доставка</a></li>
+           <li><a class="nav-link-down" href="#">Гарантия</a></li>
+           <li><a class="nav-link-down" href="#">Контакты</a></li> 
+          </ul>
         </nav>
       </header>
 
-      <main>
+      <main class="main-container">
           <h1>Моноподы для селфи</h1>
-          <nav class="breadcrumb">
+            <nav class="breadcrumb">
               <ul>
                     <li>Главная</li>
                     <li>Каталог товаров</li>
                     <li>Моноподы для селфи</li>
               </ul>
-              </nav>
+            </nav>
 
-              <p>Фильтр:</p>
+            <section class="grey-section-catalog">
+              <p class="filter-sorting">Фильтр:</p>
 
-    <fieldset>
-        <legend>Цвет</legend>
+              <fieldset>
+                  <legend class="left-filter-bold">Стоимость</legend>
+              </fieldset>
+
+        <fieldset>
+
+        <legend class="left-filter-bold">Цвет</legend>
         <ul>
             <li>
-                <label>
+                <label class="label">
                     <input type="checkbox" name="black" checked>Черный
                 </label>
             </li>
             <li>
-                <label>
+                <label class="label">
                     <input type="checkbox" name="White" checked>Белый
                 </label>
             </li>
             <li>
-                <label>
+                <label class="label">
                     <input type="checkbox" name="Blue" >Синий
                 </label>
             </li>
             <li>
-                <label>
+                <label class="label">
                     <input type="checkbox" name="Red" >Красный
                 </label>
             </li>
             <li>
-                <label>
+                <label class="label">
                     <input type="checkbox" name="Pink">Розовый
                 </label>
             </li>
@@ -81,64 +101,72 @@
     </fieldset>
 
     <fieldset>
-        <legend>Bluetooth</legend>
+        <legend class="left-filter-bold">Bluetooth</legend>
         <ul>
             <li>
-                <label>
-                    <input type="radio" name="haveBluetooth" checked>Есть
+                <label class="label">
+                    <input type="radio" name="have-bluetooth" checked>Есть
                 </label>
             </li>
             <li>
                 <legend>
-                    <input type="radio" name="haven'tBluetooth">Нет
+                    <label class="label">
+                    <input type="radio" name="haven't-bluetooth">Нет
+                    </label>
                 </legend>
             </li>
         </ul>
     </fieldset>
 
-    <a href="#">Показать</a>
-
-    <p>Сортировка:</p>
+    <a class="link-left-catalog" href="#">Показать</a>
     
+
+    <p class="filter-sorting">Сортировка:</p>
     <select name="sorting">
-<option value="Popular">Популярные</option>
-<option value="Position2">Позиция2</option>
+      <option value="Popular">Популярные</option>
+      <option value="Position2">Позиция2</option>
     </select>
 
+</section>
+
+<section class="white-background-catalog">
     <ul>
         <li>
             <a href="#">
-                <img src="#" alt="Любительская селфи-палка">
+                <img src="images/catalog/catalog-1.png" alt="Любительская селфи-палка">
                 <h3>Любительская селфи-палка</h3>
             </a>
-            <b>500 &#8381</b>
+            <b class="b">500 &#8381</b>
         </li>
         <li>
             <a href="#">
-                <img src="#" alt="Профессиональная селфи-палка">
-                <h3>Профессиональная селфи-палка</h3>
+                <img src="images/catalog/catalog-2.png" alt="Профессиональная селфи-палка">
+                <h3 class="h3">Профессиональная селфи-палка</h3>
             </a>
-            <b>1500 &#8381 </b>
+            <b class="b">1500 &#8381 </b>
         </li>
         <li>
             <a href="#">
-                <img src="#" alt="Непотопляемая селфи-палка">
-                <h3>Непотопляемая селфи-палка</h3>
+                <img src="images/catalog/catalog-3.png" alt="Непотопляемая селфи-палка">
+                <h3 class="h3">Непотопляемая селфи-палка</h3>
             </a>
-            <b>2500 &#8381</b>
+            <b class="b">2500 &#8381</b>
         </li>
         <li>
             <a href="#">
-                <img src="#" alt="Cелфи-палка &laquoСледуй за мной&#187">
-                <h3>Cелфи-палка &laquoСледуй за мной&#187</h3>
+                <img src="images/catalog/caatalog-4.png" alt="Cелфи-палка &laquoСледуй за мной&#187">
+                <h3 class="h3">Cелфи-палка &laquoСледуй за мной&#187</h3>
             </a>
-            <b>1500 &#8381</b>
+            <b class="b">1500 &#8381</b>
         </li>
     </ul>
-    <button type="button">Загрузить ещё</button>
+        <button class="pagination" type="button">Загрузить ещё</button>
+    </section>
+
+    <section class="pages1-15">
     <ul>
         <li>
-            <a href="#">
+            <a class="pagination-nav" href="#">
                 <span>Назад</span>
             </a>
         </li>
@@ -164,33 +192,35 @@
             <a href="#">15</a>
         </li>
         <li>
-            <a href="#">Вперёд</a>
+            <a href="#"><span class="pagination-nav">Вперёд</span></a>
         </li>
-    </ul>
-      </main>
+       </ul>
+    </section>
+     </main>
 
-      <footer>
-        <img src="#" alt="Логотип в подвале">
+     <footer class="footer">
+        <img src="images/logo-footer.svg" alt="Логотип в подвале" width="145" height="36">
         
-        <p>Санкт-Петербург, набережная
+        <p class="addres-footer">Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</p> 
         
-          <ul>
+          <ul class="list-footer">
             <li>Доставка</li>
             <li>Гарантия</li>
-            <li>Контакты></li>
+            <li>Контакты</li>
           </ul>
         
           <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         
           <ul>
-         <li><a href="https://www.facebook.com/htmlacademy"><img src="#" alt="Facebook"></a> </li>
-         <li><a href="https://www.instagram.com/htmlacademy/"><img src="#" alt="Instagram"></a> </li>
-         <li><a href="https://twitter.com/htmlacademy_ru"><img src="" alt="Twitter"></a> </li>
+         <li><a href="https://www.facebook.com/htmlacademy"><img src="images/facebook-dark.svg" alt="Facebook"></a> </li>
+         <li><a href="https://www.instagram.com/htmlacademy/"><img src="images/inst-dark.svg" alt="Instagram"></a> </li>
+         <li><a href="https://twitter.com/htmlacademy_ru"><img src="images/twitter-dark.svg" alt="Twitter"></a> </li>
           </ul>
         
+          <div class="yellow-line"></div>
          
-          <a href="https://htmlacademy.ru/"> <img src="#" alt="Логотип htmlacademy">.html academy</a>
+          <a href="https://htmlacademy.ru/"> <img src="images/html-academy-footer.png" alt="Логотип htmlacademy"></a>
           </footer>
-        </body>
-        </html> 
+ </body>
+ </html> 
