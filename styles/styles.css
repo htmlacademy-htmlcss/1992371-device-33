@@ -448,7 +448,11 @@ footer a {
 }
 
 .about-us{
+<<<<<<< Updated upstream
     margin-right: 108px;
+=======
+    width: 520px;
+>>>>>>> Stashed changes
 }
 
 .title-subscribe{
