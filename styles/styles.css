@@ -42,6 +42,7 @@ body {
     flex-grow: 1;
     margin: 0 auto;
     min-height: 100%;
+    min-width: none;
     flex-direction: column;
     color: #444444;
     font-style: normal;
@@ -50,10 +51,6 @@ body {
 
 .header-button{
     width: 517px;
-}
-
-.catalog{
-    width: 293px;
 }
 
 .nav-link-down {
@@ -71,6 +68,7 @@ body {
     display: flex;
     margin:0 auto;
     justify-content: center;
+    margin-top: 70px;
 }
 
 .nav-link {
@@ -112,6 +110,8 @@ body {
     font-size: 18px;
     line-height: 24px;
     color:#000000;
+    display: flex;
+    flex-direction: column;
     width: 160px;
 }
 
@@ -181,8 +181,6 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
-    width: 1440px;
-    display: flex;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
@@ -248,6 +246,12 @@ body {
     line-height: 19px;
     text-transform: uppercase;
     color:#000000;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 25px 0px;
+    width: 273px;
+    left: 60px;
 }
 
 .grey-section-catalog {
@@ -272,6 +276,9 @@ body {
     font-size: 18px;
     line-height: 20px;
     color:#000000;
+    height: 95px;
+    left: 60px;
+    top: 104px;
 }
 
 .label {
@@ -290,7 +297,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 70px 40px 0px;
+    padding: 70px 40px 35px; 
     width: 840px;
     background:#FFFFFF;
 }
@@ -401,29 +408,25 @@ footer a {
     width: 517px;
 }
 
-.catalog{
+.index-catalog{
     width: 293px;
 }
 
 .slider-box{
     display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
-.catalog-index-container{
-    width: 1160px;
-    margin: 0 auto;
+.catalog-index-container{ 
     display: flex;
     justify-content: space-between;
-}
-
-.catalog-index{
-    width: 160px;
-    display: flex;
+    margin: 0 auto;
+    padding-left: 0;
+    width: 1160px;
 }
 
 .container-delivery{
-    width: 1440px;
-    display: flex;
     background-color: #F0F0F0;
 }
 
@@ -433,9 +436,6 @@ footer a {
 }
 
 .background-delivery{
-    width: 1160px;
-    display: flex;
-    margin: 0 auto;
     background-color:#F0F0F0;
 }
 
@@ -443,12 +443,13 @@ footer a {
     width: 1160px;
     margin: 0 auto;
     display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .about-us{
-    width: 520px;
+    margin-right: 108px;
 }
-
 
 .title-subscribe{
     width: 348px;
@@ -471,8 +472,8 @@ footer a {
 }
 
 .button-container{
-    
     display: flex;
+    padding-bottom: 56px;
 }
 
 .subscribe-button{
@@ -533,50 +534,7 @@ footer a {
     padding-left: 390px;
 }
 
-.combine-all-subscribe{
-    width: 1160px;
-    margin: 0 auto;
-}
-
-.breadcrumbs{
-    width: 1079px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.list-breadcrumbs{
-    display: flex;
-}
-
-/* .aside{
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px 0px 0px 60px;
-    position: static;
-    left: 0px;
-    margin: 0 0 280px 140px;
-}
-
-.nav-catalog{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    margin-left: 360px;
-    position: static;
-    width: 980px;
-    left: 0px;
-    top: 0px;
-    background-color: #F0F0F0;
-} */
-
-
 .big-main-catalog{
-    width: 1440px;
     background-color: #F0F0F0;
 }
 
@@ -592,6 +550,7 @@ footer a {
 
 .aside{
     width: 320px;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px 0px 0px 60px;
@@ -600,9 +559,13 @@ footer a {
 .nav-catalog{
     width: 840px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    
+    left: 0px;
+    top: 0px;
 }
 
 .first-line{
@@ -718,4 +681,41 @@ li .item_1-4{
     width: 40px;
     left: 120px;
     top: 0px;
+}
+
+.container-breadcrumbs-nav{
+    display:flex;
+    flex-direction: column;
+    width: 1079px;
+    margin: 0 auto;
+}
+
+.list-breadcrumbs{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    min-width: none;
+}
+
+.catalog-items{
+    padding-left: 0;
+}
+
+.flex a{
+    color: #444444;
+}
+
+.container-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px;
+    width: 1160px;
+    left: 140px;
+    top: 0px;
+    margin-top: 70px;
 }
