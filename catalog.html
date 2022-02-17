@@ -12,75 +12,73 @@
     </head>
 
 <body>
-      <header class="header-nav">
-        <header class="header-nav">
-            <div class="container header-container">
-              <img src="images/logo.svg" alt="Логотип в шапке страницы">  
       
-              <nav class="site-navigation">
-        
-              <form class="search-form" >
-              <input type="text" value="Текст поиска" class="search-input">
-              <button type="submit" class="search-submit">Найти</button>
-        
-              </form>
-              
-              <ul class="nav-user">
-                <li>
-                  <a class="nav-link" href="#">
-                    <img src="images/login.svg" alt="login" width="13" height="12">
-                    Войти
-                  </a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#">
-                        Выйти
-                    </a>
-                </li>
-              </ul>
-        
-              <ul class="stats-market">
-                <li>
-                  <a class="nav-link" href="#">
-                    <img src="images/stats.svg" alt="Сравнить" height="10" width="12"> 
-                    Сравнить
-                  </a>
-                </li>
-        
-                <li>
-                  <a class="nav-link" href="#">
-                    <img src="images/market.svg" alt="Корзина" height="16" width="14">
-                    <span>2</span>
-                    <span>Корзина</span> 
-                  </a>
-                </li> 
-              </ul>
-            </nav>
-        
-            <nav class="site-menu">
-              <ul class="catalog">
-                <li>
-                  <a class="nav-link-down" href="#">
-                    Каталог товаров
-                  </a>
-                </li>
-              </ul>
-              <ul class="nav-list">
-               <li><a class="nav-link-down" href="#">Доставка</a></li>
-               <li><a class="nav-link-down" href="#">Гарантия</a></li>
-               <li><a class="nav-link-down" href="#">Контакты</a></li> 
-              </ul>
-            </nav>
-          </div>
-          </header>
-      </header>
+  <header class="header-nav">
+    <div class="container header-container">
+      <img src="images/logo.svg" alt="Логотип в шапке страницы" class="logo-header">  
 
+      <nav class="site-navigation">
+
+      <form class="search-form" >
+      <input type="text" value="Текст поиска" class="search-input">
+      <button type="submit" class="search-submit">Найти</button>
+
+      </form>
+      
+      <ul class="nav-user">
+        <li>
+          <a class="nav-link" href="#">
+            <img src="images/login.svg" alt="login" width="13" height="12">
+            Войти
+          </a>
+        <li class="exit">
+          <a class="nav-link" href="#">
+              Выйти
+          </a>
+        </li>
+      </ul>
+
+      <ul class="stats-market">
+        <li class="stats-market-li">
+          <a class="nav-link" href="#">
+            <img src="images/stats.svg" alt="Сравнить" height="10" width="12"> 
+            Сравнить
+          </a>
+        </li>
+
+        <li>
+          <a class="nav-link" href="#">
+            <img src="images/market.svg" alt="Корзина" height="16" width="14">
+            <span>2</span>
+            <span>Корзина</span> 
+          </a>
+        </li> 
+      </ul>
+    </nav>
+
+    <nav class="site-menu">
+      <ul class="index-catalog">
+        <li class="li">
+          <a class="nav-link-down" href="#">
+            Каталог товаров
+          </a>
+        </li class="li">
+      </ul>
+      <ul class="nav-list">
+       <li class="li"><a class="nav-link-down" href="#">Доставка</a></li>
+       <li class="li"><a class="nav-link-down" href="#">Гарантия</a></li>
+       <li class="li"><a class="nav-link-down" href="#">Контакты</a></li> 
+      </ul>
+    </nav>
+  </div>
+  </header>
+ 
       <main class="main">
 
         <section class="breadcrumbs">
           <div class="container-breadcrumbs-nav">
             
-            <h1>Моноподы для селфи</h1>
+            <h1 class="h1-selfie">Моноподы для селфи</h1>
               <nav class="breadcrumb">
                 <ul class="list-breadcrumbs">
                       <li>Главная</li>
@@ -93,20 +91,18 @@
          
 
       <section class="catalog">
-          <div class="big-main-catalog">
-            <div class="small-main-catalog">
-           <div class="aside">  
+        <div class="container catalog-container">
+          <div class="aside">  
             <section class="grey-section-catalog">
               <p class="filter-sorting">Фильтр:</p>
 
-              <fieldset>
-                  <legend class="left-filter-bold">Стоимость</legend>
-              </fieldset>
+        <fieldset>
+          <legend class="left-filter-bold">Стоимость</legend>
+        </fieldset>
 
-            
         <fieldset>
         <legend class="left-filter-bold">Цвет</legend>
-        <ul>
+        <ul class="fieldset">
             <li>
                 <label class="label">
                     <input type="checkbox" name="black" checked>Черный
@@ -137,7 +133,7 @@
 
     <fieldset>
         <legend class="left-filter-bold">Bluetooth</legend>
-        <ul>
+        <ul class="fieldset">
             <li>
                 <label class="label">
                     <input type="radio" name="have-bluetooth" checked>Есть
@@ -158,7 +154,7 @@
 
     <div class="right-catalog-main">
     <div class="nav-catalog">
-      <p class="filter-sorting">Сортировка:</p>
+      <p class="filter-sorting sorting">Сортировка:</p>
       <select name="sorting">
       <option value="Popular">Популярные</option>
       <option value="Position2">Позиция2</option>
@@ -171,7 +167,7 @@
           <li class="item_1-4">
               <a href="#">
                   <img src="images/catalog/catalog-1.png" alt="Любительская селфи-палка">
-                  <h3>Любительская селфи-палка</h3>
+                  <h3 class="h3">Любительская селфи-палка</h3>
               </a>
               <b class="b">500 &#8381</b>
           </li>
@@ -244,37 +240,40 @@
 </section>
 </main>
 
-     <footer class="footer">
-        <div class="footer-width">
-        <img src="images/logo-footer.svg" alt="Логотип в подвале" width="145" height="36">
-  
-          <div class="first-cont-footer">
-  
-            <p class="addres-footer">Санкт-Петербург, набережная
+    <footer class="footer">
+      <div class="container">
+        <div class="flex-footer">
+          <div class="logo-adress">
+            <img src="images/logo-footer.svg" alt="Логотип в подвале" class="footer-logo" width="145" height="36">        
+              <p class="addres-footer">Санкт-Петербург, набережная
               реки Карповки, 5, литера П.</p> 
-  
+          </div>
+
             <ul class="list-footer">
               <li>Доставка</li>
               <li>Гарантия</li>
               <li>Контакты</li>
             </ul>
-  
-            <a href="tel:+78128121212" class="phone-footer">+7 (812) 812-12-12</a>
+          <div class="phone-footer">
+            <a href="tel:+78128121212" class="number">+7 (812) 812-12-12</a>
           </div>
-  
-          <div class="cont-footer-second">
+        </div>
+      </div>
+
+          <div class="cont-footer-second container">
             <div class="yellow-line"> </div>
-  
+
             <ul class="list-social">
               <li><a href="https://www.facebook.com/htmlacademy"><img src="images/facebook-dark.svg" alt="Facebook"></a> </li>
               <li><a href="https://www.instagram.com/htmlacademy/"><img src="images/inst-dark.svg" alt="Instagram"></a> </li>
               <li><a href="https://twitter.com/htmlacademy_ru"><img src="images/twitter-dark.svg" alt="Twitter"></a> </li>
             </ul>
-  
+        <div class="ending-index">
           <a href="https://htmlacademy.ru/" class="logo-end"> <img src="images/html-academy-footer.png" alt="Логотип htmlacademy" ></a>
         </div>
+        </div>
       </div>
+    </div>
     </footer>
-
- </body>
- </html> 
+  </body>
+</html> 
