@@ -19,41 +19,44 @@
 
       <nav class="site-navigation">
 
-      <form class="search-form" >
+      <form class="search-form">
       <input type="text" value="Текст поиска" class="search-input">
-      <button type="submit" class="search-submit">Найти</button>
-
+      <button type="submit" class="search-submit"><p class="search">Найти</p></button>
       </form>
       
-      <ul class="nav-user">
-        <li>
-          <a class="nav-link" href="#">
-            <img src="images/login.svg" alt="login" width="13" height="12">
-            Войти
-          </a>
-        <li class="exit">
-          <a class="nav-link" href="#">
-              Выйти
-          </a>
-        </li>
-      </ul>
+      <div class="block-nav-user">
+        <ul class="nav-user">
+          <li>
+            <a class="nav-link" href="#">
+              <img src="images/login.svg" alt="login" width="13" height="12">
+              Войти
+            </a>
+          <li class="exit">
+            <a class="nav-link" href="#">
+                Выйти
+            </a>
+          </li>
+        </ul>
+      </div>
 
-      <ul class="stats-market">
-        <li class="stats-market-li">
-          <a class="nav-link" href="#">
-            <img src="images/stats.svg" alt="Сравнить" height="10" width="12"> 
-            Сравнить
-          </a>
-        </li>
+      <div class="block-stats">
+        <ul class="stats-market">
+          <li class="stats-market-li">
+            <a class="nav-link" href="#">
+              <img src="images/stats.svg" alt="Сравнить" height="10" width="12"> 
+              Сравнить
+            </a>
+          </li>
 
-        <li>
-          <a class="nav-link" href="#">
-            <img src="images/market.svg" alt="Корзина" height="16" width="14">
-            <span>2</span>
-            <span>Корзина</span> 
-          </a>
-        </li> 
-      </ul>
+          <li>
+            <a class="nav-link" href="#">
+              <img src="images/market.svg" alt="Корзина" height="16" width="14">
+              <span>2</span>
+              <span>Корзина</span> 
+            </a>
+          </li> 
+        </ul>
+      </div>
     </nav>
 
     <nav class="site-menu">
@@ -82,7 +85,15 @@
               <nav class="breadcrumb">
                 <ul class="list-breadcrumbs">
                       <li>Главная</li>
+                      <div class="arrow-breadcrumbs">
+                        <div class="arrow-top"></div>
+                        <div class="arrow-bottom"></div>
+                      </div>
                       <li>Каталог товаров</li>
+                      <div class="arrow-breadcrumbs">
+                        <div class="arrow-top"></div>
+                        <div class="arrow-bottom"></div>
+                      </div>
                       <li>Моноподы для селфи</li>
                 </ul>
               </nav>
@@ -153,20 +164,24 @@
     </div>
 
     <div class="right-catalog-main">
+
     <div class="nav-catalog">
-      <p class="filter-sorting sorting">Сортировка:</p>
+      <p class="filter-sorting">Сортировка:</p>
+
       <select name="sorting">
       <option value="Popular">Популярные</option>
       <option value="Position2">Позиция2</option>
       </select>
+
+      <div class="triangle"></div>
+      <div class="triangle180"></div>
     </div>
    
     <section class="white-background-catalog">
       
         <ul class="catalog-items">
-          <div class="grid-catalog">
 
-            <li class="cards card-start">                    
+            <li class="cards">                    
               <img src="images/catalog/catalog-1.png" alt="Любительская селфи-палка">
                <div class="catalog-price">
                 <a href="#">
@@ -176,7 +191,7 @@
                </div>
             </li>
 
-            <li class="cards card-prof">
+            <li class="cards">
                <img src="images/catalog/catalog-2.png" alt="Профессиональная селфи-палка">
               <div class="catalog-price">
                 <a href="#">
@@ -186,7 +201,7 @@
               </div>
             </li>
 
-            <li class="cards card-water">
+            <li class="cards">
               <img src="images/catalog/catalog-3.png" alt="Непотопляемая селфи-палка">
                 <div class="catalog-price">
                   <a href="#">
@@ -197,7 +212,7 @@
                 </div>
             </li>
 
-            <li class="cards card-hand">
+            <li class="cards">
               <img src="images/catalog/caatalog-4.png" alt="Cелфи-палка &laquoСледуй за мной&#187">
                 <div class="catalog-price">
                   <a href="#">
@@ -208,7 +223,6 @@
                 </div>
             </li>
 
-          </div>
         </ul>
       
 
@@ -290,5 +304,34 @@
     </div>
    </div>
   </footer>
+  <div class="delivery-form">
+    <h2>Доставка под заказ</h2>
+    <form class="main-info">
+
+    <div class="name">
+      <label>Ваше имя:</label>
+      <input id="name" type="text" value="Введите имя">
+    </div>
+
+    <div class="form-mail">
+      <label>Ваш e-mail:</label>
+      <input id="mail" type="text" value="Почта">
+    </div>
+
+    <div class="what-u-need">
+      <label>Что нужно привезти:</label>
+      <input id="what-u-need" type="text" value="В свободной форме">
+    </div>  
+
+    <div class="plus-minus">
+      <button class="plus">+</button>
+      <input type="text" value="1" class="input-between">
+      <button class="minus">-</button>
+    </div>
+
+      <button class="pagination">Отправить</button>
+    </form>
+
+  </div>
   </body>
 </html> 
