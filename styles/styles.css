@@ -172,10 +172,11 @@ body {
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
     width: 280px;
-    margin-top: 65px;
-    margin-bottom: 65px;
-    padding:0;
+    padding-top: 65px;
+    padding-bottom: 65px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -728,6 +729,13 @@ footer a {
     list-style-type: none;
 }
 
+.list-social::before{
+    content: '';
+    width: 80px;
+    border: #ffc500 solid 3.5px;
+    background-color: #FFC500;
+}
+
 .logo-header{
     display: block;
     padding-bottom: 30px;
@@ -954,6 +962,7 @@ margin-right: 36px;
     margin-top: 50px;
     margin-bottom: 50px;
     width: 220px;
+    background-color: #FFE17F;
 }
 
 .photo{
@@ -1146,6 +1155,18 @@ margin-right: 36px;
     background-color: #FFE17F;
 }
 
+.catalog-image:hover{
+    background-color: #FFC700;
+}
+
+.catalog-image:active{
+    opacity: 0.3;
+}
+
+.catalog-image:focus{
+    border: 2px solid #AF4FFF;
+}
+
 .catalog-price{
     display: flex;
     align-items: flex-start;
@@ -1205,8 +1226,25 @@ margin-right: 36px;
     background-color: #ffe17f;
 }
 
+.picture-truck:hover{
+    background-color: #FFC700;
+}
+
+.picture-truck:active{
+    opacity: 0.3;
+}
+
+.picture-truck:focus{
+    border: 2px solid #AF4FFF;
+}
+
 .info{
+    opacity: 0.3;
     padding: 30px 42.5px 30px 42.5px;
+}
+
+.info:hover{
+    opacity: 1;
 }
 
 .delivery-guy{
@@ -1333,3 +1371,25 @@ margin-right: 36px;
     transition: all 0.15s;
 }
 
+.container-delivery::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 319px;
+    border: 3.5px solid #000000;
+    background-color: #000000;
+    height: 319px;
+    left: 280px;
+}
+
+.list-black-white{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffe17f;
+}
+
+.list-black-white:hover{
+    background-color: #000000;
+    color: #FFC700;
+} 
