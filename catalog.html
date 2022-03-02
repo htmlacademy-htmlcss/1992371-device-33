@@ -304,34 +304,54 @@
     </div>
    </div>
   </footer>
-  <div class="delivery-form">
-    <h2>Доставка под заказ</h2>
-    <form class="main-info">
 
-    <div class="name">
-      <label>Ваше имя:</label>
-      <input id="name" type="text" value="Введите имя">
+  <div class="container delivery-form">
+    <div class="container-input">
+
+      <div class="escape-text">
+      <p class="p-form">Доставка под заказ</p>
+      <svg class="escape-form" aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z" fill="black"/>
+      </svg>
+      </div>
+
+      <form class="main-info">
+      
+      <div class="name-mail">
+        <div class="name direction">
+          <label id="name" class="font-form">Ваше имя:</label>
+          <input class="color-inputs" id="name" type="text" placeholder="Введите имя">
+          <label id="name" class="add-name">Добавьте имя</label>
+        </div>
+
+        <div class="form-mail direction">
+          <label id="mail" class="font-form">Ваш e-mail:</label>
+          <input class="color-inputs" id="mail" type="text" placeholder="Почта">
+        </div>
+      </div>  
+
+
+      <div class="quantity">
+        <div class="what-u-need direction">
+          <label id="what-u-need" class="font-form">Что нужно привезти:</label>
+          <input class="color-inputs" id="what-u-need" type="text" placeholder="В свободной форме">
+        </div>
+
+        <div class="plus-minus">
+          <label id="plus-minus" class="font-form" >Количество:</label>
+          <div class="formula">
+            <form>
+              <button id="plus-minus" class="plus">+</button>
+              <input id="plus-minus" type="text" value="1" class="input-between">
+              <button id="plus-minus" class="minus">-</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+        <button class="pagination send">Отправить</button>
+      </form>
     </div>
-
-    <div class="form-mail">
-      <label>Ваш e-mail:</label>
-      <input id="mail" type="text" value="Почта">
-    </div>
-
-    <div class="what-u-need">
-      <label>Что нужно привезти:</label>
-      <input id="what-u-need" type="text" value="В свободной форме">
-    </div>  
-
-    <div class="plus-minus">
-      <button class="plus">+</button>
-      <input type="text" value="1" class="input-between">
-      <button class="minus">-</button>
-    </div>
-
-      <button class="pagination">Отправить</button>
-    </form>
-
   </div>
   </body>
 </html> 

@@ -570,10 +570,6 @@ footer a {
     background-color: #FFE17F;
 }
 
-.search-input::before{
-
-}
-
 .search-submit{
     display: inline-block;
     background-color: #ffe17f;
@@ -1182,6 +1178,7 @@ margin-right: 36px;
 
 .plus-minus{
     display: flex;
+    flex-direction: column;
     width: 180px;
 }
 
@@ -1257,7 +1254,10 @@ margin-right: 36px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 22px 20px;
+    background-color: #F0F0F0;
+    border: 0;
+    height: 60px;
+    padding: 29px 22px 29px 22px;
 }
 
 .minus{
@@ -1265,7 +1265,10 @@ margin-right: 36px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 22px 20px;
+    background-color: #F0F0F0;
+    border: 0;
+    height: 60px;
+    padding: 29px 22px 29px 22px;
 }
 
 .input-between{
@@ -1273,9 +1276,11 @@ margin-right: 36px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     width: 60px;
     background: #F0F0F0;
+    border: 0;
+    height: 60px;
+    padding: 20px 24px 20px 24px;
 }
 
 .a-footer{
@@ -1393,3 +1398,104 @@ margin-right: 36px;
     background-color: #000000;
     color: #FFC700;
 } 
+
+.p-form{
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    width: 498px;
+    margin: 0;
+}
+
+.font-form{
+    font-family: "Rubik",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    margin-bottom: 14px;
+}
+
+.direction{
+    display: flex;
+    flex-direction: column;
+}
+
+.escape-form{
+    margin-top: 12px;
+}
+
+.escape-form:hover{
+    opacity: 0.6;
+}
+
+.escape-form:active{
+    opacity: 0.3;
+}
+
+.escape-form:focus{
+    border: 2px solid #AF4FFF;
+}
+
+.container-input{
+    padding: 72px 80px;
+}
+
+.escape-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-name{
+    font-family: "Rubik",sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.color-inputs{
+    background-color: #F0F0F0;
+    border: 0;
+    height: 60px;
+}
+
+.name-mail{
+    display: flex;
+    margin-top: 42px;
+}
+
+.name{
+    width: 360px;
+    margin-right: 40px;
+}
+
+.form-mail{
+    width: 360px;
+}
+
+.quantity{
+    display: flex;
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+
+.what-u-need{
+    width: 540px;
+    margin-right: 40px;
+}
+
+.formula{
+    display: flex;
+    flex-direction: row;
+}
+
+.send{
+    background-color: #FFE17F;
+    height: 8px;
+}
