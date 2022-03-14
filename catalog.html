@@ -72,40 +72,19 @@
     <nav class="site-menu">
 
       <div class="name-catalog">
-        <ul class="index-catalog">
-          <li class="li">
-            <a class="catalog-header" href="#">
+
+        <button type="button" class="index-catalog">
+            <span class="catalog-header li">
               Каталог товаров
-            </a>
-          </li>
-        </ul>
+            </span>
+            <svg class="catalog-plus" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="25" cy="25" r="24" stroke="black" stroke-width="2"/>
+              <path d="M33 24H26V17H24V24H17V26H24V33H26V26H33V24Z" fill="black"/>
+            </svg>
+        </button>
 
-        <svg aria-hidden="true" focusable="false" width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle opacity="0.3" cx="25" cy="25.3889" r="24" stroke="black" stroke-width="2"/>
-          <g opacity="0.3" clip-path="url(#clip0_18844_657)">
-          <path d="M33 24.3889H26V17.3889H24V24.3889H17V26.3889H24V33.3889H26V26.3889H33V24.3889Z" fill="black"/>
-          </g>
-          <defs>
-          <clipPath id="clip0_18844_657">
-          <rect width="16" height="16" fill="white" transform="translate(17 17.3889)"/>
-          </clipPath>
-          </defs>
-        </svg>
+        
       </div>
-      <!-- <ul class="list-pop">
-        <li class="point-pop">Виртуальная реальность</li>
-        <li class="point-pop">Моноподы для селфи</li>
-        <li class="point-pop">Экшн-камеры</li>
-      </ul>
-
-      <ul class="list-pop">  
-        <li class="point-pop">Фитнес-браслеты</li>
-        <li class="point-pop">Умные часы</li>
-      </ul>
-
-      <ul class="list-pop">
-        <li class="point-pop">Квадракоптеры</li>
-      </ul> -->
 
       <ul class="nav-list">
        <li class="li"><a class="nav-link-down" href="#">Доставка</a></li>
@@ -115,6 +94,25 @@
     </nav>
   </div>
   </header>
+
+    <section class="container">
+      <div class="section-lists">
+        <ul class="list-pop">
+          <li class="point-pop">Виртуальная реальность</li>
+          <li class="point-pop">Моноподы для селфи</li>
+          <li class="point-pop">Экшн-камеры</li>
+        </ul>
+
+        <ul class="list-pop">  
+          <li class="point-pop">Фитнес-браслеты</li>
+          <li class="point-pop">Умные часы</li>
+        </ul>
+
+        <ul class="list-pop">
+          <li class="point-pop">Квадракоптеры</li>
+        </ul>
+      </div>
+    </section>
  
       <main class="main">
 
@@ -125,11 +123,11 @@
               <nav class="breadcrumb">
                 <ul class="list-breadcrumbs">
                       <li>Главная</li>
-                      <svg class="arrow-breadcrumb" aria-hidden="true" focusable="false" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="arrow-breadcrumb-first" aria-hidden="true" focusable="false" width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z" fill="black"/>
                       </svg>
                       <li>Каталог товаров</li>
-                      <svg class="arrow-breadcrumb" aria-hidden="true" focusable="false"width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg class="arrow-breadcrumb-second" aria-hidden="true" focusable="false"width="4" height="7" viewBox="0 0 4 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z" fill="black"/>
                       </svg>
                       <li>Моноподы для селфи</li>
@@ -147,6 +145,7 @@
 
         <fieldset class="fieldset cost">
           <legend class="left-filter-bold">Стоимость</legend>
+
           <div class="range">
             <div class="range-scale">
               <div class="range-bar" style="left: 0; width: 119px;">
@@ -160,7 +159,7 @@
               <input type="number" value="0" name="min-price" class="range-input">
               </label>
 
-              <label for="" class="catalog-filter-label">
+              <label for="" class="catalog-filter-label range-input-max">
                 до
                 <input type="number" class="range-input" value="5000" name="max-price ">
               </label>
@@ -173,27 +172,45 @@
         <ul class="fieldset">
             <li>
                 <label class="label">
-                    <input type="checkbox" name="black" checked>Черный
+                  <input type="checkbox" name="black" class="control visually-hidden" checked>
+                    <span class="square">
+                      <svg class="yes" aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
+                      </svg>
+                    </span>
+                  <span class="font">Черный</span>
                 </label>
             </li>
             <li>
                 <label class="label">
-                    <input type="checkbox" name="White" checked>Белый
+                  <input type="checkbox" name="White" class="control visually-hidden" checked>
+                    <span class="square"> 
+                      <svg class="yes" aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
+                      </svg>
+                    </span>
+                  <span class="font">Белый</span>
                 </label>
             </li>
             <li>
                 <label class="label">
-                    <input type="checkbox" name="Blue" >Синий
+                  <input type="checkbox" name="Blue" class="control visually-hidden">
+                  <span class="square current current-square"></span>
+                  <span class="font">Синий</span>
                 </label>
             </li>
             <li>
                 <label class="label">
-                    <input type="checkbox" name="Red" >Красный
+                  <input type="checkbox" name="Red" class="control visually-hidden">
+                  <span class="square current current-square" ></span>
+                  <span class="font">Красный</span>
                 </label>
             </li>
             <li>
                 <label class="label">
-                    <input type="checkbox" name="Pink">Розовый
+                  <input type="checkbox" name="Pink" class="control visually-hidden">
+                  <span class="square current current-square"></span>
+                  <span class="font">Розовый</span>
                 </label>
             </li>
         </ul>
@@ -204,20 +221,26 @@
         <ul class="fieldset">
             <li>
                 <label class="label">
-                    <input type="radio" name="have-bluetooth" checked>Есть
+                    <input type="radio" name="have-bluetooth" class="control-input visually-hidden" checked>
+                    <span class="circle"></span>
+                    <span class="font">Есть</span>
                 </label>
             </li>
             <li>
                 <legend>
                     <label class="label">
-                    <input type="radio" name="haven't-bluetooth">Нет
+                    <input type="radio" name="haven't-bluetooth" class="visually-hidden ">
+                    <span class="current-circle"></span>
+                    <span class="font">Нет</span>
                     </label>
                 </legend>
             </li>
         </ul>
     </fieldset>
    
-    <a class="link-left-catalog" href="#"><span class="look">Показать</span></a>
+    <div class="position-show-link">
+      <a href="#" class="more show-link" >Показать</a>
+    </div>
     </div>
 
     <div class="right-catalog-main">
@@ -225,11 +248,12 @@
     <div class="nav-catalog">
       <p class="filter-sorting">Сортировка:</p>
 
-      <select class="select" name="sorting">
-      <option value="Popular">Популярные</option>
-      <option value="Position2">Позиция2</option>
-      </select>
-
+      <div class="select">
+        <select class="select-control" name="sorting">
+          <option value="Popular">Популярные</option>
+          <option value="Position2">Позиция2</option>
+        </select>
+      </div>
       <a href="#" class="link-catalog">
         <svg class="arrow-catalog-up" aria-hidden="true" focusable="false" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6 0L11.5 10H0.5" fill="black"/>
@@ -249,44 +273,52 @@
         <ul class="catalog-items">
 
             <li class="cards">                    
-              <img src="images/catalog/catalog-1.png" alt="Любительская селфи-палка">
-               <div class="catalog-price">
+              <div class="catalog-price">
                 <a href="#">
-                    <h3 class="h3">Любительская селфи-палка</h3>
-                </a>
-                <b class="b">500 &#8381</b>
+                  <img class="opacity-items" src="images/catalog/catalog-1.png" alt="Любительская селфи-палка">
+                  <div class="desc-h3">
+                    <h3 class="h3">Любительская <br> селфи-палка</h3>
+                    <b class="b">500 &#8381</b>
+                  </div>
+                  </a>
                </div>
             </li>
 
             <li class="cards">
-               <img src="images/catalog/catalog-2.png" alt="Профессиональная селфи-палка">
               <div class="catalog-price">
                 <a href="#">
-                    <h3 class="h3">Профессиональная селфи-палка</h3>
+                  <img class="opacity-items" src="images/catalog/catalog-2.png" alt="Профессиональная селфи-палка">
+                  <div class="desc-h3">
+                    <h3 class="h3">Профессиональная <br> селфи-палка</h3>
+                    <b class="b">1500 &#8381 </b>
+                  </div>
                 </a>
-                <b class="b">1500 &#8381 </b>
               </div>
             </li>
 
             <li class="cards">
-              <img src="images/catalog/catalog-3.png" alt="Непотопляемая селфи-палка">
-                <div class="catalog-price">
-                  <a href="#">
-                      
-                      <h3 class="h3">Непотопляемая селфи-палка</h3>
-                  </a>
-                  <b class="b">2500 &#8381</b>
-                </div>
+              <div class="catalog-price">
+                <a href="#">
+                  <div class="opacity-items">
+                    <img src="images/catalog/catalog-3.png" alt="Непотопляемая селфи-палка">
+                    <div class="desc-h3">
+                      <h3 class="h3">Непотопляемая <br> селфи-палка</h3>
+                      <b class="b">2500 &#8381</b>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </li>
 
             <li class="cards">
-              <img src="images/catalog/caatalog-4.png" alt="Cелфи-палка &laquoСледуй за мной&#187">
-                <div class="catalog-price">
-                  <a href="#">
-                      
-                      <h3 class="h3">Cелфи-палка &laquoСледуй за мной&#187</h3>
+              <div class="catalog-price">
+                <a href="#">
+                    <img class="opacity-items" src="images/catalog/caatalog-4.png" alt="Cелфи-палка &laquoСледуй за мной&#187">
+                      <div class="desc-h3">
+                        <h3 class="h3">Cелфи-палка &laquoСледуй за <br> мной&#187</h3>
+                        <b class="b">1500 &#8381</b>
+                      </div>
                   </a>
-                  <b class="b">1500 &#8381</b>
                 </div>
             </li>
 
