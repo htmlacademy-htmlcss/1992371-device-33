@@ -1252,6 +1252,10 @@ margin-right: 36px;
     background-color: #ffcc33;
 }
 
+.more:active{
+    background-color: #ffc700;
+}
+
 .more:focus:not(:active){
     border: 2px solid #AF4FFF;
 }
@@ -1453,9 +1457,23 @@ margin-right: 36px;
     outline: 2px solid #AF4FFF;
 }
 
-.catalog-price{
+.hover-form{
+    position: relative;
     display: flex;
     align-items: flex-start;
+}
+
+.hover-form:hover .card-hover{
+    display: flex;
+}
+
+.card-hover{
+    display: none;
+    position: absolute;
+    width: 220px;
+    top: 170px;
+    left: 70px;
+    z-index: 2;
 }
 
 .opacity-items{
@@ -1470,7 +1488,7 @@ margin-right: 36px;
 }
 
 .opacity-items:hover{
-    background: rgba(240, 240, 240, 0.8);
+    opacity: 0.2;
     outline: 1px solid #444444;
 }
 
