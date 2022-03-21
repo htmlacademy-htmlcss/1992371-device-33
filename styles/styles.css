@@ -371,6 +371,7 @@ body{
     text-transform: uppercase;
     list-style-type: none;
     color: #FFFFFF;
+    align-items: flex-start;
     margin: 0;
     padding: 0;
     justify-content: space-between;
@@ -385,6 +386,7 @@ body{
 }
 
 .slider-1{
+    width: 200px;
     text-decoration: none;
     color: #000000;
 }
@@ -489,18 +491,17 @@ body{
     line-height: 19px;
 }
 
+.label input:checked ~ .square{
+    border-color: #000000;
+}
+
 .label input:checked ~ .square .yes{
     display: block;
 }
 
-.label input:disabled ~ .square{
-    position: absolute;
-	width: 20px;
-	height: 20px;
-    margin-right: 16px;
-    border: 2px solid #CCCCCC;
-    border-radius: 3px;
-	background: transparent;
+.label input:disabled ~ .square,
+.label input:disabled ~ .font{
+    opacity: 0.1;
 }
 
 .checked{
@@ -509,11 +510,7 @@ body{
 
 .label .control-input[type="radio"]:checked ~ .circle::before{
     display: block;
-    position: absolute;
     content: '';
-    top: 3.5px;
-    left: 3.5px;
-    bottom: 6px;
     width: 9px;
     height: 9px;
     border-radius: 50%;
@@ -525,6 +522,14 @@ body{
     border: 2px solid #CCCCCC;
 }
 
+.control:hover{
+    opacity: 0,6;
+}
+
+.control:active{
+    opacity: 0.3;
+}
+
 .yes{
     display: none;
     position: absolute;
@@ -534,18 +539,23 @@ body{
 
 .control-input[type="radio"]:checked,
 .circle:before .yes{
-    display: none;
-    
+    display: none
 }
 
 .circle{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	width: 20px;
 	height: 20px;
     margin-right: 16px;
-    border: 2px solid #000000;
+    border: 2px solid #CCCCCC;
     border-radius: 50%;
 	background: transparent;
+}
+.control-input[type="radio"]:checked ~ .circle{
+    border-color: #000000;
 }
 
 .yellow-bakground-catalog{
@@ -743,12 +753,13 @@ main{
 
 .nav-user{
     display: flex;
+    flex-wrap: wrap;
     align-self: center;
+    align-items: space-between;
     margin:0;
     padding-left: 0;
     list-style-type: none;
 }
-
 .block-login{
     margin-left: 26.5px;
     margin-right: 26.5px; 
@@ -935,7 +946,7 @@ main{
 
 .list-footer{
     display: flex;
-    width: 444px;
+    flex-wrap: wrap;
 }
 
 .first-cont-footer{
@@ -1226,6 +1237,7 @@ main{
     align-items: center;
     width: 159px;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .select-control{
@@ -1235,6 +1247,17 @@ main{
     padding-right: 20px;
     font-size: 16px;
     line-height: 30px;
+}
+
+.select:hover{
+    opacity: 0,6;
+}
+
+.select:active{
+    opacity: 0,3;
+}
+.select:focus{
+    outline: 2px solid #AF4FFF;
 }
 
 .list-breadcrumbs li:last-child{
@@ -1505,11 +1528,16 @@ main{
     padding: 0;
 }
 
-.logo-end:hover{
+.logo-end {
+    fill: #FFC700;
+}
+
+.logo-end:hover svg{
     fill: #FFFFFF;
 }
 
-.logo-end:active{
+.logo-end:active {
+    fill: #FFFFFF;
     opacity: 0.3;
 }
 
@@ -1584,6 +1612,8 @@ main{
 .card-hover{
     display: none;
     position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
     width: 220px;
     top: 170px;
     left: 70px;
@@ -1611,6 +1641,22 @@ main{
     border: 10px solid #000000;
     box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
     width: 920px;
+    height: 568px;
+    background-color: #FFFFFF;
+}
+
+.modal-container{
+    display: flex;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .plus-minus{
@@ -1748,7 +1794,7 @@ main{
 
 .footer-links:hover{
     color: #FFC700;
-    text-decoration: #FFC700;
+    border-bottom: 2px solid #FFC700;
 }
 
 .footer-links:active{
@@ -1760,7 +1806,11 @@ main{
 }
 
 a.footer-links{
-    margin: 0;
+    margin-right: 35px;
+}
+
+a.footer-links:last-of-type{
+    margin-right: 35px;
 }
 
 .logo-end:hover{
@@ -1923,6 +1973,7 @@ a.footer-links{
 
 .container-input{
     padding: 72px 80px;
+
 }
 
 .escape-text{
@@ -2266,7 +2317,7 @@ a.footer-links{
 }
 
 .range-toggle:hover{
-    opacity: 0.5;
+    border-color: rgba(0, 0, 0, 0.5);
     background-color: #EBEBEB;
 }
 
@@ -2475,7 +2526,7 @@ a.footer-links{
 	width: 20px;
 	height: 20px;
     margin-right: 16px;
-    border: 2px solid #000000;
+    border: 2px solid #CCCCCC;
     border-radius: 3px;
 	background: transparent;
 }
@@ -2511,6 +2562,17 @@ legend{
     background-color: #000000;
 }
 
+.pop-down::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -6px;
+    right: 56px;
+    width: 14px;
+    height: 6px;
+    background: url(../images/triangle.svg);
+}
+
 .form-text-pop{
     display: inline-block;
     font-size: 16px;
@@ -2519,7 +2581,8 @@ legend{
     color: #FFFFFF;
 }
 
-.counter:hover ~ .pop-over{
+.counter:hover ~ .pop-over,
+.pop-over:hover{
     display: block;
 }
 
@@ -2716,6 +2779,19 @@ legend{
     outline: 2px solid #AF4FFF;
 }
 
-.btn-download:hover{
+.show-more:hover{
+ border: 3px solid #000000;
+}
 
+.show-more:active{
+    opacity: 0.3;
+} 
+
+.show-more:focus{
+    outline: 2px solid #AF4FFF;
+}
+
+.login-name{
+    opacity: 0.3;
+    margin-left: 40px;
 }
