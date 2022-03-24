@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "Raleway"; 
     src: url("../fonts/raleway/raleway-800.woff2") format("woff2"); 
@@ -91,7 +92,7 @@ body{
     outline: 2px solid #AF4FFF;
 }
 
-.nav-link{
+.navigation-link{
     display:flex;
     align-items: baseline;
     font-weight: 400;
@@ -101,31 +102,32 @@ body{
     color:#000000;
 }
 
-.nav-link:hover{
+.nav-link-up:hover{
     opacity: 0.6;
 }
 
-.nav-link:active{
+.nav-link-up:active{
     opacity: 30%;
-
 }
 
-.nav-link:focus:not(:active){
+.nav-link-up:focus:not(:active){
     outline: 2px solid #AF4FFF;
 }
 
-.h1-flying{
+.h2-flying{
     font-family: "Raleway", sans-serif;
+    width: 550px;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
     color:#000000;
-    margin-top: 121px;
+    margin-top: 120px;
+    margin-left: 0px;
     display: inline-block;
     /* margin-bottom: 0; */
 }
 
-.h1-bee{
+.h2-bee{
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 50px;
@@ -144,6 +146,7 @@ body{
 }
 
 .value{
+    margin-left: -6px;
     list-style-type: none;
     font-size: 36px;
     line-height: 30px;
@@ -153,6 +156,8 @@ body{
 .dd{
     margin: 0;
     padding: 0;
+    margin-top: 14px;
+    margin-left: -5px;
     list-style-type: none;
     font-size: 16px;
     line-height: 30px;
@@ -249,6 +254,9 @@ body{
 
 
 .description-to-delivery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 452px;
     font-size: 18px;
     line-height: 30px;
 }
@@ -386,7 +394,8 @@ body{
 }
 
 .slider-1{
-    width: 200px;
+    width: 220px;
+    margin-top: -26px;
     text-decoration: none;
     color: #000000;
 }
@@ -418,6 +427,7 @@ body{
     padding: 25px 0;
     margin: 0;
     width: 273px;
+    letter-spacing: 0.2em;
 }
 
 .sorting{
@@ -508,7 +518,7 @@ body{
     display: block;
 }
 
-.label .control-input[type="radio"]:checked ~ .circle::before{
+.control-input[type="radio"]:checked ~ .circle::before{
     display: block;
     content: '';
     width: 9px;
@@ -661,7 +671,7 @@ body{
     text-decoration: none;  
 }
 
-footer a{
+.link{
     display: flex;
     color:#FFFFFF;
 }
@@ -686,7 +696,10 @@ footer a{
     text-transform: uppercase;
     font-weight: 800;
     text-align: center;
+    margin-left: 3px;
+    margin-top: 3px;
     letter-spacing: 0.2em;
+    width: 236px;
     color:#000000;
 }
 
@@ -699,12 +712,13 @@ footer a{
     flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: center;
-    width: 240px;
-    margin: 0;
+    width: 230px;
+    margin: 0px;
     padding: 0;
     padding-top: 5px;
     padding-bottom: 5px;
     list-style-type: none;
+    margin-right: -19px;
 }
 
 .stats-market-li{
@@ -716,13 +730,9 @@ footer a{
     margin-left: 26.5px;
 }
 
-header{
+.header-nav{
     position: relative;
     z-index: 1;
-}
-
-main{
-    position: relative;
 }
 
 .header-container{
@@ -732,6 +742,7 @@ main{
 }
 
 .site-menu{
+    width: 1160px;
     display:flex;
     padding-top: 30px;
 }
@@ -740,15 +751,22 @@ main{
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
 }
 
 .nav-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    /* align-items: end; */
     list-style-type: none;
     padding: 0;
-    margin-left: auto;
+    margin-top: 18px;
+    margin-left: 281px;
 }
 
 .nav-user{
@@ -761,8 +779,8 @@ main{
     list-style-type: none;
 }
 .block-login{
-    margin-left: 26.5px;
-    margin-right: 26.5px; 
+    margin-left: 29.5px;
+    margin-right: 26.5px;
 }
 
 .block-stats-market{
@@ -775,7 +793,7 @@ main{
     font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 20px;
-    width: 359px;
+    width: 366px;
     padding: 0;
     padding: 8px 8px;
     padding-left: 48px;
@@ -792,7 +810,8 @@ main{
 .search-submit{
     display: inline-block;
     background-color: #ffe17f;
-    width: 160px;
+    width: 164px;
+    font-size: 16px;
     padding: 0;
     margin-left: -2px;
     border: 2px solid #000000;
@@ -849,13 +868,17 @@ main{
     cursor: pointer;
 }
 
-.li{
+.nav-link{
     font-family: "Raleway",sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
-    padding-right: 45px;
+    padding-right: 50px;
     letter-spacing: 0.2em;
+}
+
+.nav-link:last-child{
+    padding-right: 0;
 }
 
 .li:only-child{
@@ -873,7 +896,9 @@ main{
 }
 
 .catalog-index-container{ 
-    display: flex;
+    display: grid;
+    gap: 40px 20px;
+    grid-template-columns: 160px 160px 160px 160px 160px 160px;
     justify-content: space-between;
     padding-left: 0;
 }
@@ -1029,6 +1054,10 @@ main{
     margin: 0;
 }
 
+.ending-index:focus{
+    border: 2px solid #AF4FFF ;
+}
+
 .big-main-catalog{
     background-color: #F0F0F0;
 }
@@ -1074,7 +1103,6 @@ main{
     align-items: flex-start;
     padding: 0;
     width: 360px;
-    height: 452px;
 }
 
 .second-line{
@@ -1152,7 +1180,11 @@ main{
     align-items: center;
     padding: 0;
     opacity: 0.3;
-    width: 40px;
+    margin-right: 31px;
+}
+
+.container-for-numbers:last-of-type{
+    margin-right: 0;
 }
 
 .container-for-numbers:hover{
@@ -1266,6 +1298,7 @@ main{
 
 .main{
     min-width: none;
+    position: relative;
 }
 
 .catalog-items{
@@ -1315,7 +1348,9 @@ main{
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    margin-right: 40px;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-left: 2px;
 }
 
 .specifications{
@@ -1359,6 +1394,8 @@ main{
     justify-content: center;
     align-items: center; 
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
     color: #000000;
 }
 
@@ -1404,17 +1441,16 @@ main{
     width: 100%;
 }
 
-.h2-index{
+.h3-index{
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
     color: #000000;
     width: 242px;
-    height: 50px;
     margin: 0; 
     margin-top: 15px;
-    grid-area: h2-index;
+    grid-area: h3-index;
 }
 
 .aside-contucts{
@@ -1423,7 +1459,7 @@ main{
     margin-left: 108px;
 }
 
-.h2-description{
+.h3-description{
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 50px;
@@ -1442,6 +1478,18 @@ main{
     margin-bottom: 30px;
 }
 
+.nav-link-up{
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+}
+
 .description-we{
     font-size: 18px;
     line-height: 30px;
@@ -1454,7 +1502,7 @@ main{
     width: 270px;
 }
 
-.h2-contucts{
+.h3-contucts{
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 50px;
@@ -1558,7 +1606,7 @@ main{
     margin: auto;
 }
 
-.h1-selfie{
+.h2-selfie{
     font-family: "Raleway", sans-serif;
     font-size: 50px;
     font-weight: 800;
@@ -1572,6 +1620,7 @@ main{
 
 .catalog-image{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: 160px;
@@ -1667,8 +1716,7 @@ main{
 }
 
 .arrow-left-slider{
-    left: 0;
-    margin-top: -30px;
+    left: 26px;
 }
 
 .arrow-left-slider:hover{
@@ -1709,10 +1757,25 @@ main{
     background-color: #ffe17f;
 }
 
-.delivery-guy{
+.background-image{
     position: absolute;
     top: 10px;
-    right: 0;
+    left: 558px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.delivery-guy{
+    background: url(../images/delivery-guy.svg) no-repeat;
+}
+
+.techno-svg{
+    background: url(../images/techno-svg.svg) no-repeat;
+}
+
+.credit-image{
+    background: url(../images/credit-svg.svg) no-repeat;
 }
 
 .plus{
@@ -1766,6 +1829,7 @@ main{
 
 .a-footer:hover{
     background: #FFC700;
+    border-radius: 50%;
 }
 
 .a-footer:active path{
@@ -1890,7 +1954,6 @@ a.footer-links:last-of-type{
     display: flex;
     margin-top: auto;
     width: 280px;
-    height: 40px;
     color: #ffe17f;
     background-color: #000000;
 }
@@ -1921,6 +1984,7 @@ a.footer-links:last-of-type{
 
 .span-black{
     padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 18px;
 }
 
@@ -1991,6 +2055,11 @@ a.footer-links:last-of-type{
 }
 
 .color-inputs{
+    font-family: 'Rubik',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     padding-left: 10px; 
     border: 0;
     height: 60px;
@@ -2096,7 +2165,7 @@ a.footer-links:last-of-type{
 
 .name-catalog{
     display: flex;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
 }
 
 .slider-button{
@@ -2107,6 +2176,8 @@ a.footer-links:last-of-type{
     padding: 0;
     margin: 0;
     width: 20px;
+    margin-bottom: 76px;
+    margin-right: -9px;
 }
 
 .slider-button:hover{
@@ -2144,10 +2215,12 @@ a.footer-links:last-of-type{
 }
 
 .point{
-    width: 12px;
-    height: 12px;
-    margin-right: 20px;
-    margin-bottom: 6px;
+    width: 18px;
+    height: 11px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    border: 0;
+    background-color: transparent;
 }
 
 .point:last-child{
@@ -2185,6 +2258,9 @@ a.footer-links:last-of-type{
     display: flex;
     justify-content: flex-end;
     position: relative;
+    top: -23px;
+    right: -24px;
+    /* padding-left: 42px; */
 }
 
 .point-link{
@@ -2196,6 +2272,7 @@ a.footer-links:last-of-type{
 }
 
 .point-cont{
+    margin-bottom: 3px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2215,26 +2292,6 @@ a.footer-links:last-of-type{
     width: 7px;
     background-color: #000000;
  }
-
-.h2-description:before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 7px;
-    width: 84px;
-    background-color: #000000;
-}
-
-.h2-contucts:before{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    height: 7px;
-    width: 84px;
-    background-color: #000000;
-}
 
 .more-info:before{
     position: absolute;
@@ -2301,6 +2358,8 @@ a.footer-links:last-of-type{
 
 .range-bar{
     position: absolute;
+    left: 0; 
+    width: 119px;
     height: 2px;
     background-color: #000000;
 }
@@ -2374,7 +2433,7 @@ a.footer-links:last-of-type{
 .slider-counter{
     position: relative;
     width: 1160px;
-    height: 133px;
+    height: 124px;
     background-color: #ffe17f;
 }
 
@@ -2383,7 +2442,7 @@ a.footer-links:last-of-type{
     right: 0;
     top: 0;
     margin-top: 10px;
-    margin-right: 49px;
+    margin-right: 32px;
     font-weight: bold;
     font-size: 180px;
     line-height: 120px;
@@ -2448,8 +2507,9 @@ a.footer-links:last-of-type{
 }
 
 .catalog-plus{
-    margin-left: 15px;
+    margin-left: 11px;
     opacity: 0.3;
+    margin-top: 2px;
 }
 
 .catalog-minus{
@@ -2457,8 +2517,6 @@ a.footer-links:last-of-type{
     margin-left: 15px;
     opacity: 0.3;
 }
-
-
 
 .drop-btn.show .catalog-plus{
     display: none;
@@ -2482,6 +2540,10 @@ a.footer-links:last-of-type{
 .range-input::-webkit-inner-spin-button{
     appearance: none;
     margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
 }
 
 .range-input{
@@ -2512,7 +2574,7 @@ a.footer-links:last-of-type{
     width: 50%;
 }
 
-.left-filter-bold::before{
+.cost::after{
     position: absolute;
     top: -12px;
     left: 0;
@@ -2589,6 +2651,7 @@ legend{
 .pop-over{
     display: none;
     position: absolute;
+    top: 20px;
     right: 0;
     width: 320px;
     background: #000000;
@@ -2613,6 +2676,7 @@ legend{
     padding: 0;
     margin: 0;
     margin-top: 20px;
+    margin-right: 20px;
     top: 0;
     right: 0;
     height: 10px;
@@ -2621,6 +2685,34 @@ legend{
     background-repeat: no-repeat;
     background-image: url(../images/close-pop.svg);
     cursor: pointer;
+}
+
+.escape-pop-second{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    margin-top: 94px;
+    margin-right: 20px;
+    top: 0;
+    right: 0;
+    height: 10px;
+    width: 10px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../images/close-pop.svg);
+    cursor: pointer;
+}
+
+.escape-pop-second:hover{
+    opacity: 0.6;
+}
+
+.escape-pop-second:active{
+    opacity: 0.3;
+}
+
+.escape-pop-second:focus{
+    outline: 2px solid #AF4FFF;
 }
 
 .escape-pop:hover{
@@ -2794,4 +2886,60 @@ legend{
 .login-name{
     opacity: 0.3;
     margin-left: 40px;
+}
+
+.go-pro-back{
+    margin-top: 50%;
+    width: 72px;
+    height: 165px;
+    background: url(../images/gopro-yellow.svg) no-repeat;
+}
+
+.vr-back{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 97px;
+    height: 55px;
+    background: url(../images/vr-yellow.svg) no-repeat;
+}
+
+.mono-back{
+    margin-top: 43px;
+    margin-left: 37px;
+    width: 118px;
+    height: 117px;
+    background: url(../images/selfie-yellow.svg) no-repeat;
+}
+
+.bracelete-back{
+    margin-top: 47px;
+    margin-left: 26px;
+    width: 135px;
+    height: 125px;
+    background: url(../images/bracelet-yellow.svg) no-repeat;
+}
+
+.copter-back{
+    margin-top: 45px;
+    margin-left: 14px;
+    width: 140px;
+    height: 118px;
+    background: url(../images/copter-yellow.svg) no-repeat;
+}
+
+.smart-back{
+    margin-top: 31px;
+    margin-left: 52px;
+    width: 117px;
+    height: 135px;
+    background: url(../images/smart-watch-yellow.svg) no-repeat;
+}
+
+.font:focus{
+    border: 2px solid #AF4FFF;
+}
+
+.control:focus{
+    border: 2px solid #AF4FFF;
 }
