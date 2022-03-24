@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../1992371-device-33/images/Фавиконка.png">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,8 +66,8 @@
               </a>
             </li>
     
-            <li class="nav-link-up">
-              <a class="navigation-link counter" href="#">
+            <li>
+              <a class="nav-link-up counter" href="#">
                 <svg class="icons" aria-hidden="true" focusable="false" width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M15.3 5.38892L11.8 5.58892L8.6 0.688916C8.5 0.488916 8.2 0.388916 8 0.388916C7.8 0.388916 7.5 0.488916 7.4 0.688916L4.2 5.58892H0.7C0.3 5.58892 0 5.88892 0 6.28892C0 6.38892 0 6.38892 0 6.48892L1.9 13.2889C2.1 13.9889 2.6 14.3889 3.3 14.3889H12.7C13.4 14.3889 13.9 13.9889 14.1 13.2889L16 6.38892C16 6.28892 16 6.28892 16 6.18892C16 5.78892 15.7 5.38892 15.3 5.38892ZM8 2.28892L10.2 5.48892H5.9L8 2.28892Z" fill="black"/>
                 </svg>
@@ -74,22 +75,26 @@
                 <span>Корзина</span> 
               </a>
               <div class="container pop-over">
-                  <div class="container-pop">
-                    <div class="first-cart">
-                      <img src="../1992371-device-33/images/product-pop.png" alt="Любительская-селфи-палка" height="43px" width="39px">
-                      <p class="pop-text">Любительская <br> селфи-палка</p>
+                <div class="container-pop">
+                  <div class="cart">
+                    <div class="cart-opacity">
+                      <img src="../1992371-device-33/images/product-pop.png" alt="Любительская-селфи-палка" height="39px" width="43px">
+                      <a href="#" class="pop-text">Любительская <br> селфи-палка</a>
                     </div>
-                    <div class="escape-pop"></div>
-                    <div class="second-cart">
-                      <img src="../1992371-device-33/images/product-pop2.png" alt="Проф-селфи-палка" height="43px" width="39px">
-                      <p class="pop-text">Профессиональная <br> селфи-палка</p>
+                    <button type="button" class="escape-pop"></butto>
+                  </div>
+                  <div class="cart">
+                    <div class="cart-opacity">
+                      <img src="../1992371-device-33/images/product-pop2.png" alt="Проф-селфи-палка" height="39px" width="43px">
+                      <a href="#" class="pop-text">Профессиональная <br> селфи-палка</a>
                     </div>
-                    <div class="escape-pop-second"></div>
-                    <div class="outcame">
-                      <div class="background-pop"></div>
-                      <p class="text-outcame">Товаров: 2</p>
-                      <p class="text-outcame">Сумма: 2000 ₽</p>
-                    </div>
+                    <button type="button" class="escape-pop"></butto>
+                  </div>
+                  <div class="outcame">
+                    <div class="background-pop"></div>
+                    <p class="text-outcame">Товаров: 2</p>
+                    <p class="text-outcame">Сумма: 2000 ₽</p>
+              </div>
 
                     <div class="btn-open">
                       <button type="button" class="btn-pop">ОТКРЫТЬ КОРЗИНУ</button>
@@ -190,17 +195,17 @@
             <a class="slider-1 more" href="#">Подробнее</a>
           </div>
 
-          <ul class="list-points">
-            <button type="button" class="point">
+          <div class="list-points">
+            <button type="button" class="point point-black">
               <span class="visually-hidden">Первый элемент</span>
             </button>
             <button type="button" class="point">
               <span class="visually-hidden">Второй элемент</span>
             </button>
-            <button type="button" class="point point-black">
+            <button type="button" class="point">
               <span class="visually-hidden">Третий элемент</span>
             </button>
-          </ul>
+          </div>
       </div>
        
       <dl class="specifications">
@@ -210,7 +215,7 @@
           <dd class="dd"> Дальность полёта </dd>
         </div>
 
-        <div>
+        <div class="second-range">
           <dt class="value"> 50 м </dt>
           <dd class="dd"> Радиус положения </dd>
         </div>
@@ -250,7 +255,7 @@
             <div class="point-cont">
               <a class="slider-1 more" href="#">Подробнее</a>
       
-              <ul class="list-points">
+              <div class="list-points">
                 <button type="button" class="point">
                   <span class="visually-hidden">Первый элемент</span>
                 </button>
@@ -260,7 +265,7 @@
                 <button type="button" class="point point-black">
                   <span class="visually-hidden">Третий элемент</span>
                 </button>
-              </ul>
+              </div>
             </div>
             
             <dl class="specifications">
@@ -303,7 +308,7 @@
             <div class="point-cont">
               <a class="slider-1 more" href="#">Подробнее</a>
       
-              <ul class="list-points">
+              <div class="list-points">
                 <button type="button" class="point">
                   <span class="visually-hidden">Первый элемент</span>
                 </button>
@@ -313,7 +318,7 @@
                 <button type="button" class="point point-black">
                   <span class="visually-hidden">Третий элемент</span>
                 </button>
-              </ul>
+              </div>
             </div>
       
             <dl class="specifications">
@@ -341,48 +346,61 @@
 </div>
     <ul class="container catalog-index-container">
 
-      <a href="#" class="catalog-index link-index">
+      <li>
+        <a href="#" class="catalog-index link-index">
         <div class="catalog-image">
           <div class="vr-back"></div>
         </div>
           <span class="photo-flex">Виртуальная реальность</span>
       </a>
+      </li>
       
-      <a href="#" class="catalog-index link-index">
+      <li>
+        <a href="#" class="catalog-index link-index">
         <div class="catalog-image">
           <div class="mono-back"></div>
         </div>
-          <span class="photo-flex">Моноподы для селфи</span>
+          <span class="photo-flex">Моноподы <br>для селфи</span>
       </a>
-
+      </li>
+      
+      <li>
         <a href="#" class="catalog-index link-index">
           <div class="catalog-image">
             <div class="go-pro-back"></div>
           </div>
           <span class="photo-flex">Экшн-камеры</span>
         </a>
-
+      </li>
         
+
+      <li>
         <a href="#" class="catalog-index link-index">
           <div class="catalog-image">  
             <div class="bracelete-back"></div>
           </div>
             <span class="photo-flex">Фитнес-браслеты</span>
         </a>
-
+      </li>
+        
+      <li>
         <a href="#" class="catalog-index link-index">
           <div class="catalog-image">
             <div class="smart-back"></div>
           </div>
             <span class="photo-flex">Умные часы</span>
         </a>
-
+      </li>
+        
+      <li>
         <a href="#" class="catalog-index link-index">
           <div class="catalog-image">
             <div class="copter-back"></div>
           </div>
             <span class="photo-flex">Квадракоптеры</span>
         </a>
+      </li>
+        
 
     </ul>
 
@@ -391,9 +409,9 @@
       <div class="ul-delivery-guarantee-credit">
 
       <ul class="delivery-credit-guarantee">
-        <button class="list-black-white current"><span class="span-black">Доставка</span></button> 
-        <button class="list-black-white"><span class="span-black">Гарантия</span></button>
-        <button class="list-black-white"><span class="span-black">Кредит</span></button>
+        <li><button class="current"><span class="span-delivery">Доставка</span></button></li> 
+        <li><button class="list-black-white"><span class="span-black">Гарантия</span></button></li>
+        <li><button class="list-black-white"><span class="span-black">Кредит</span></button></li>
       </ul>
 
       </div>
@@ -419,9 +437,9 @@
         <div class="ul-delivery-guarantee-credit">
   
         <ul class="delivery-credit-guarantee">
-          <button class="list-black-white"><span class="span-black">Доставка</span></button> 
-          <button class="list-black-white current"><span class="span-black">Гарантия</span></button>
-          <button class="list-black-white"><span class="span-black">Кредит</span></button>
+         <li><button class="list-black-white"><span class="span-black">Доставка</span></button></li>  
+         <li><button class="list-black-white current"><span class="span-black">Гарантия</span></button></li> 
+         <li>><button class="list-black-white"><span class="span-black">Кредит</span></button></li>
         </ul>
   
         </div>
@@ -446,9 +464,9 @@
           <div class="ul-delivery-guarantee-credit">
     
           <ul class="delivery-credit-guarantee">
-            <button class="list-black-white"><span class="span-black">Доставка</span></button> 
-            <button class="list-black-white"><span class="span-black">Гарантия</span></button>
-            <button class="list-black-white current"><span class="span-black">Кредит</span></button>
+           <li><button class="list-black-white"><span class="span-black">Доставка</span></button> </li> 
+           <li><button class="list-black-white"><span class="span-black">Гарантия</span></button></li> 
+           <li><button class="list-black-white current"><span class="span-black">Кредит</span></button></li> 
           </ul>
     
           </div>
@@ -516,7 +534,7 @@
       <div class="aside-contucts">
       <h3 class="h3-contucts">Контакты</h3>
 
-        <p class="description-you">Вы можете забрать товар сами, заехав в наш офис. 
+        <p class="description-you">Вы можете забрать товар сами, заехав в наш офис. <br>
         Заодно сможете проверить работоспособность покупки. </p>
 
       <div class="web-market">
@@ -595,7 +613,7 @@
           </div>
 
           <div class="phone-footer">
-            <a href="tel:+78128121212" class="number link">+7 (812) 812-12-12</a>
+            <a href="tel:+78128121212" class="number link">Тел.:+7 (812) 812-12-12</a>
           </div>
         </div>
       </div>
@@ -603,8 +621,8 @@
           <div class="cont-footer-second container">
 
             <ul class="list-social">
-              <li class="a-footer">
-                <a href="https://www.facebook.com/htmlacademy">
+              <li>
+                <a class="a-footer" href="https://www.facebook.com/htmlacademy">
                   <svg  aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
                   <path d="M22.5 14H25V11H21.6C18.8 11 18 12.7 18 15.2V17H16V20H18V29H21V20H24.3L24.9 17H21V15.5C21 14.7 21.3 14 22.5 14Z" fill="#444444"/>
@@ -613,8 +631,8 @@
                 </a>
               </li>
 
-              <li class="a-footer">
-                <a href="https://www.instagram.com/htmlacademy/">
+              <li>
+                <a class="a-footer" href="https://www.instagram.com/htmlacademy/">
                   <svg aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
                     <path d="M20 22C21.1046 22 22 21.1046 22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22Z" fill="#444444"/>
@@ -624,8 +642,8 @@
                 </a>
               </li>
 
-              <li class="a-footer">
-                <a href="https://twitter.com/htmlacademy_ru">
+              <li>
+                <a class="a-footer" href="https://twitter.com/htmlacademy_ru">
                   <svg aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3"/>
                     <path d="M22.7 13.1551C24.2 12.6551 25.3 13.4551 25.9 14.2551C26.4 14.0551 27 13.8551 27.6 13.6551C27.6 14.4551 27.1 15.0551 26.8 15.2551C27.5 15.4551 28 14.8551 28 14.8551C27.9 15.7551 27.1 16.5551 26.6 16.7551C26.4 23.0551 23.8 27.1551 17.7 27.0551C17.2 27.0551 17.8 27.0551 17.3 27.0551C17 27.0551 13.6 26.6551 13 25.2551C15 25.4551 16.4 24.8551 17.1 24.1551C16.3 23.8551 14.7 23.7551 14.5 21.3551C14.8 21.5551 15 21.6551 15.6 21.5551C14.5 20.7551 13.3 20.0551 13.4 18.0551C13.7 18.3551 14.3 18.5551 14.6 18.4551C14 18.2551 12.8 15.3551 13.8 13.8551C15.4 15.5551 17.1 17.2551 20.1 17.3551C20.3 15.2551 21.1 13.8551 22.7 13.1551Z" fill="#444444"/>
@@ -636,8 +654,8 @@
 
             </ul>
 
-        <div class="ending-index">
-          <a href="https://htmlacademy.ru/"> 
+        <div>
+          <a class="ending-index" href="https://htmlacademy.ru/"> 
             <svg class="logo-end" aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.9V15.5H2.5V12.9H0Z"/>
               <path d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z"/>
