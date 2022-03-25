@@ -82,22 +82,25 @@
               <span>Корзина</span> 
             </a>
             <div class="container pop-over">
-                <div class="container-pop">
-                  <div class="first-cart">
-                    <img src="../1992371-device-33/images/product-pop.png" alt="Любительская-селфи-палка" height="43px" width="39px">
-                    <p class="pop-text">Любительская <br> селфи-палка</p>
+              <div class="container-pop">
+                <div class="cart">
+                  <div class="cart-holder">
+                    <img src="images/product-pop.png" alt="Любительская-селфи-палка" height="43" width="39">
+                    <a href="#" class="pop-text">Любительская <br> селфи-палка</a>
                   </div>
-                  <div class="escape-pop"></div>
-                  <div class="second-cart">
-                    <img src="../1992371-device-33/images/product-pop2.png" alt="Проф-селфи-палка" height="43px" width="39px">
-                    <p class="pop-text">Профессиональная <br> селфи-палка</p>
+                  <button type="button" class="escape-pop"></button>
+                </div>
+                <div class="cart">
+                  <div class="cart-holder">
+                    <img src="images/product-pop2.png" alt="Проф-селфи-палка" height="43" width="39">
+                    <a href="#" class="pop-text">Профессиональная <br> селфи-палка</a>
                   </div>
-                  <div class="escape-pop-second"></div>
-                  <div class="outcame">
-                    <div class="background-pop"></div>
-                    <p class="text-outcame">Товаров: 2</p>
-                    <p class="text-outcame">Сумма: 2000 ₽</p>
-                  </div>
+                  <button type="button" class="escape-pop"></button>
+                </div>
+                <div class="outcame">
+                 <p class="text-outcame">Товаров: 2</p>
+                  <p class="text-outcame">Сумма: 2000 ₽</p>
+                </div>
 
                   <div class="btn-open">
                     <button type="button" class="btn-pop">ОТКРЫТЬ КОРЗИНУ</button>
@@ -163,10 +166,9 @@
     </section>
  
       <main class="main">
-
         <section class="breadcrumbs">
           <div class="container-breadcrumbs-nav">
-            
+           <h1 class="visually-hidden">Device</h1>
             <h2 class="h2-selfie">Моноподы для селфи</h2>
               <nav class="breadcrumb">
                 <ul class="list-breadcrumbs">
@@ -258,7 +260,7 @@
         </ul>
     </fieldset>
 
-    <fieldset class="fieldset cost">
+    <fieldset class="fieldset cost bluetooth">
         <legend class="left-filter-bold">Bluetooth</legend>
         <ul class="fieldset">
             <li>
@@ -392,9 +394,8 @@
          
           </div>
         </div>
-      </div>
     </section>
-</section>
+  </section>
 </section>
 </main>
 
@@ -483,9 +484,7 @@
           <span class="visually-hidden">Закрывающее лого</span>
         </a>
       </div>
-      </div>
     </div>
-  </div>
  </footer>
 
   <div class="modal-container">
@@ -507,7 +506,7 @@
           <div class="name-mail">
             <div class="name direction">
               <label id="name" class="font-form">Ваше имя:</label>
-              <input class="color-inputs general-form" id="name" type="text" placeholder="Введите имя">
+              <input id="name" class="color-inputs general-form"  type="text" placeholder="Введите имя">
               <label id="name" class="add-name">Добавьте имя</label>
 
               <svg class="icon-form" width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -518,7 +517,7 @@
 
             <div class="form-mail direction">
               <label id="mail" class="font-form">Ваш e-mail:</label>
-              <input class="color-inputs red-border general-form" id="mail" type="text" value="почта">
+              <input id="mail" class="color-inputs red-border general-form" type="text" value="почта">
               <label id="mail" class="funny">Забавный у вас адрес</label>
               <svg class="icon-form" aria-hidden="true" focusable="false" width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.6 8C7.2 8 7 7.9 6.6 7.7L0 4V11C0 11.6 0.4 12 0.9 12H14.1C14.7 12 15 11.6 15 11V4L8.5 7.7C8.1 7.9 7.9 8 7.6 8ZM14.1 0H0.9C0.4 0 0 0.5 0 1V1.8L7.5 6L15 1.8V1C15 0.5 14.6 0 14.1 0Z" fill="#B3B3B3"/>
@@ -530,7 +529,7 @@
           <div class="quantity">
             <div class="what-u-need direction">
               <label id="what-u-need" class="font-form">Что нужно привезти:</label>
-              <input class="color-inputs general-form" id="what-u-need" type="text" placeholder="В свободной форме">
+              <input id="what-u-need" class="color-inputs general-form"  type="text" placeholder="В свободной форме">
             </div>
 
             <div class="plus-minus">

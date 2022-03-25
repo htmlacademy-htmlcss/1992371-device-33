@@ -115,7 +115,7 @@ body{
     outline: 2px solid #AF4FFF;
 }
 
-.h2-flying{
+.font-title{
     font-family: "Raleway", sans-serif;
     width: 550px;
     font-weight: 800;
@@ -127,17 +127,6 @@ body{
     letter-spacing: 0.00576em;
     display: inline-block;
     /* margin-bottom: 0; */
-}
-
-.h2-bee{
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 50px;
-    color:#000000;
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 29px;
 }
 
 .description-slider{
@@ -334,7 +323,7 @@ body{
 }
 
 .e-mail:focus{
-    outline: 2px solid #AF4FFF;
+    border: 2px solid #AF4FFF;
 }
 
 .button-main::before{
@@ -414,12 +403,6 @@ body{
     text-decoration: none;
     color: #000000;
 }
-
-.nav-link-opacity{ 
-    font-size: 18px;
-    line-height: 30px;
-    color: #000000;
-    }
 
 .breadcrumb{
     padding-left: 15px;
@@ -1378,13 +1361,12 @@ body{
     position: relative;
     padding: 0;
     margin: 0;
-    margin-top: 17px;
     margin-bottom: 4px;
     list-style-type: none;
 }
 
 .cost{
-    /* margin-top: 30px; */
+    margin-top: 30px;
 }
 
 .exit{
@@ -1426,7 +1408,11 @@ body{
 
 .position-show-link{
     width: 220px;
-    margin-top: 35px;
+    margin-top: 19px;
+}
+
+.bluetooth{
+    margin-top: 14px;
 }
 
 .show-link{
@@ -2797,7 +2783,7 @@ legend{
     cursor: pointer;
 }
 
-.cart-opacity{
+.cart-holder{
     display: flex;
 }
 
@@ -2949,6 +2935,16 @@ legend{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+}
+
+.outcame::before{
+    position: absolute;
+    content: '';
+    z-index: 1;
+    left: -20px;
+    width: 320px;
+    height: 100%;
+    background-color: #1A1A1A;
 }
 
 .text-outcame{
@@ -3115,10 +3111,6 @@ legend{
 
 .number{
     margin-top: 20px;
-}
-
-.fieldset{
-    margin-top: 32px;
 }
 
 .fieldset li{
